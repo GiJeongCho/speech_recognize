@@ -27,13 +27,27 @@ class SpeakerEngine:
         logger.info("ERes2Net model is successfully pinned to GPU.")
 
     def ensure_mono_16k(self, wav: torch.Tensor, sr: int) -> torch.Tensor:
-        # ... (생략)
-        if sr != 16000:
-            wav = torchaudio.functional.resample(wav, sr, 16000)
+        if wav.dim() == 1:
+            wav = wav.unsqueeze(0)
+        if wav.size(0) > 1:
+            wav = wav.mean(dim=0, keepdim=True)
+
+        target_sr = 16000
+        if sr != target_sr:
+            wav = torchaudio.functional.resample(wav, sr, target_sr)
         return wav
 
     def extract_score(self, result: Any) -> float:
-        # ... (생략)
+        if isinstance(result, (float, int)):
+            return float(result)
+        if isinstance(result, dict):
+            for k in ("score", "scores", "similarity", "cosine_score"):
+                if k in result:
+                    v = result[k]
+                    if isinstance(v, (float, int)):
+                        return float(v)
+                    if isinstance(v, list) and v:
+                        return float(v[0])
         if isinstance(result, list) and result:
             return self.extract_score(result[0])
         return 0.0
@@ -50,28 +64,85 @@ class SpeakerEngine:
         wav, sr = torchaudio.load(full_audio_path)
         wav = self.ensure_mono_16k(wav, sr)
         sr = 16000
+        n_samples = wav.size(1)
 
         # 2. 기준 화자(Enrollment) 파일 목록 확보
         speakers_path = Path(speakers_root)
         enroll_data = {}
-        # ... (생략)
+        
+        if speakers_path.exists():
+            # speakers_root 아래의 각 디렉토리를 화자로 간주
+            for spk_dir in sorted([p for p in speakers_path.iterdir() if p.is_dir()]):
+                spk_name = spk_dir.name
+                refs = []
+                for ext in [".wav", ".flac", ".m4a", ".mp3"]:
+                    refs.extend(list(spk_dir.glob(f"*{ext}")))
+                    refs.extend(list(spk_dir.glob(f"*{ext.upper()}")))
+                
+                if refs:
+                    enroll_data[spk_name] = refs
+
+            # speakers_root 자체에 오디오 파일이 있는 경우 (화자 이름은 파일명)
+            for ext in [".wav", ".flac", ".m4a", ".mp3"]:
+                for f in speakers_path.glob(f"*{ext}"):
+                    if f.stem not in enroll_data:
+                        enroll_data[f.stem] = [f]
+                for f in speakers_path.glob(f"*{ext.upper()}"):
+                    if f.stem not in enroll_data:
+                        enroll_data[f.stem] = [f]
+
         if not enroll_data:
+            logger.error(f"No speaker enrollment files found in {speakers_root}")
             raise RuntimeError(f"No speaker enrollment files found in {speakers_root}")
 
         # 3. 각 청크별 화자 비교
         results = []
-        temp_seg_path = "/tmp/current_seg.wav"
+        temp_seg_path = f"/tmp/seg_{int(time.time())}.wav"
 
-        for i, chunk in enumerate(whisper_chunks):
-            # ... (기존 루프 로직)
-            assigned = best_spk if best_score >= threshold else "unknown"
-            results.append({
-                "start": start,
-                "end": end,
-                "text": chunk.get("text", ""),
-                "speaker": assigned,
-                "score": round(float(best_score), 4)
-            })
+        try:
+            for i, chunk in enumerate(whisper_chunks):
+                start = float(chunk.get("start", 0))
+                end = float(chunk.get("end", 0))
+                
+                # 청크 잘라내기
+                s_idx = max(0, int(round(start * sr)))
+                e_idx = min(n_samples, int(round(end * sr)))
+                
+                if e_idx <= s_idx:
+                    continue
+                    
+                seg_wav = wav[:, s_idx:e_idx]
+                torchaudio.save(temp_seg_path, seg_wav, sr)
+                
+                best_spk = "unknown"
+                best_score = -1.0
+                
+                for spk_name, refs in enroll_data.items():
+                    spk_best = -1.0
+                    for ref_path in refs:
+                        try:
+                            r = self.sv_pipeline([temp_seg_path, str(ref_path)])
+                            score = self.extract_score(r)
+                            if score > spk_best:
+                                spk_best = score
+                        except Exception as e:
+                            logger.error(f"Error comparing {temp_seg_path} with {ref_path}: {e}")
+                    
+                    if spk_best > best_score:
+                        best_score = spk_best
+                        best_spk = spk_name
+                
+                assigned = best_spk if best_score >= threshold else "unknown"
+                results.append({
+                    "start": start,
+                    "end": end,
+                    "text": chunk.get("text", ""),
+                    "speaker": assigned,
+                    "score": round(float(best_score), 4)
+                })
+        finally:
+            if os.path.exists(temp_seg_path):
+                os.remove(temp_seg_path)
 
         end_time = time.time()
         return {
