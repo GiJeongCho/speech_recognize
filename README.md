@@ -18,17 +18,17 @@ uv pip install -r requirements.txt
 uv run uvicorn src.api:app --host 0.0.0.0 --port 8011 --reload
 ```
 
-### 2. 컨테이너 환경 실행 (Podman)
+### 2. 컨테이너 환경 실행 (Podman/Docker)
 ```bash
 # 이미지 빌드
 podman build -t pps/speech_recognize:v0.0.1 -f Dockerfile .
 
-# 컨테이너 실행 (모델 및 직원 DB 마운트 권장)
+# 컨테이너 실행
 podman run -d \
   --name speaker-recognize \
   --device nvidia.com/gpu=all \
   -p 8011:8011 \
-  -v /path/to/models:/app/src/resoursces/models:Z \
+  -v /home/pps-nipa/NIQ/fish/speech_recognize/src/resoursces/models:/app/src/resoursces/models:Z \
   -v /home/pps-nipa/NIQ/fish/speech_recognize/src/resoursces/employee:/app/src/resoursces/employee:Z \
   pps/speech_recognize:v0.0.1
 ```

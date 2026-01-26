@@ -58,7 +58,7 @@ class SpeakerEngine:
         full_audio_path: str, 
         whisper_chunks: List[Dict], 
         speakers_root: str, 
-        threshold: float = 0.25
+        threshold: float = 0.1
     ) -> Dict:
         start_time = time.time()
         # 1. 원본 오디오 로드 및 전처리
