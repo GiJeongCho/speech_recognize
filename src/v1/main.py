@@ -3,6 +3,7 @@ import torch
 import torchaudio
 import logging
 import time
+import shutil
 from pathlib import Path
 from typing import Dict, List, Tuple, Any
 from modelscope.pipelines import pipeline
@@ -66,43 +67,71 @@ class SpeakerEngine:
         sr = 16000
         n_samples = wav.size(1)
 
-        # 2. 기준 화자(Enrollment) 파일 목록 확보
+        # 2. 기준 화자(Enrollment) 파일 목록 확보 및 전처리 (16k mono WAV로 변환)
         speakers_path = Path(speakers_root)
         enroll_data = {}
+        temp_enroll_dir = Path(f"/tmp/enroll_{int(time.time())}")
+        temp_enroll_dir.mkdir(parents=True, exist_ok=True)
         
-        if speakers_path.exists():
-            # speakers_root 아래의 각 디렉토리를 화자로 간주
-            for spk_dir in sorted([p for p in speakers_path.iterdir() if p.is_dir()]):
-                spk_name = spk_dir.name
-                refs = []
-                for ext in [".wav", ".flac", ".m4a", ".mp3"]:
-                    refs.extend(list(spk_dir.glob(f"*{ext}")))
-                    refs.extend(list(spk_dir.glob(f"*{ext.upper()}")))
-                
-                if refs:
-                    enroll_data[spk_name] = refs
-
-            # speakers_root 자체에 오디오 파일이 있는 경우 (화자 이름은 파일명)
-            for ext in [".wav", ".flac", ".m4a", ".mp3"]:
-                for f in speakers_path.glob(f"*{ext}"):
-                    if f.stem not in enroll_data:
-                        enroll_data[f.stem] = [f]
-                for f in speakers_path.glob(f"*{ext.upper()}"):
-                    if f.stem not in enroll_data:
-                        enroll_data[f.stem] = [f]
-
-        if not enroll_data:
-            logger.error(f"No speaker enrollment files found in {speakers_root}")
-            raise RuntimeError(f"No speaker enrollment files found in {speakers_root}")
-
-        # 3. 각 청크별 화자 비교
-        results = []
-        temp_seg_path = f"/tmp/seg_{int(time.time())}.wav"
-
         try:
+            if speakers_path.exists():
+                # speakers_root 아래의 각 디렉토리를 화자로 간주
+                for spk_dir in sorted([p for p in speakers_path.iterdir() if p.is_dir()]):
+                    spk_name = spk_dir.name
+                    refs = []
+                    for ext in [".wav", ".flac", ".m4a", ".mp3", ".WAV", ".FLAC", ".M4A", ".MP3"]:
+                        for f in spk_dir.glob(f"*{ext}"):
+                            try:
+                                # 16k mono WAV로 변환하여 임시 저장
+                                wav_enroll, sr_enroll = torchaudio.load(str(f))
+                                wav_enroll = self.ensure_mono_16k(wav_enroll, sr_enroll)
+                                tmp_f = temp_enroll_dir / f"{spk_name}_{f.stem}.wav"
+                                torchaudio.save(str(tmp_f), wav_enroll, 16000)
+                                refs.append(tmp_f)
+                            except Exception as e:
+                                logger.error(f"Failed to process enrollment file {f}: {e}")
+                    
+                    if refs:
+                        enroll_data[spk_name] = refs
+
+                # speakers_root 자체에 오디오 파일이 있는 경우 (화자 이름은 파일명)
+                for ext in [".wav", ".flac", ".m4a", ".mp3", ".WAV", ".FLAC", ".M4A", ".MP3"]:
+                    for f in speakers_path.glob(f"*{ext}"):
+                        if f.stem not in enroll_data:
+                            try:
+                                wav_enroll, sr_enroll = torchaudio.load(str(f))
+                                wav_enroll = self.ensure_mono_16k(wav_enroll, sr_enroll)
+                                tmp_f = temp_enroll_dir / f"direct_{f.stem}.wav"
+                                torchaudio.save(str(tmp_f), wav_enroll, 16000)
+                                enroll_data[f.stem] = [tmp_f]
+                            except Exception as e:
+                                logger.error(f"Failed to process direct enrollment file {f}: {e}")
+
+            if not enroll_data:
+                logger.error(f"No speaker enrollment files found in {speakers_root}")
+                raise RuntimeError(f"No speaker enrollment files found in {speakers_root}")
+
+            logger.info(f"Loaded {len(enroll_data)} speakers for identification")
+
+            # 3. 각 청크별 화자 비교
+            results = []
+            temp_seg_path = f"/tmp/seg_{int(time.time())}.wav"
+
             for i, chunk in enumerate(whisper_chunks):
-                start = float(chunk.get("start", 0))
-                end = float(chunk.get("end", 0))
+                # 시간 정보 추출 (start/end 또는 timestamp 리스트 대응)
+                start = chunk.get("start")
+                end = chunk.get("end")
+                
+                if start is None or end is None:
+                    ts = chunk.get("timestamp", [0, 0])
+                    if isinstance(ts, list):
+                        start = ts[0] if len(ts) > 0 else 0
+                        end = ts[1] if len(ts) > 1 else 0
+                    else:
+                        start, end = 0, 0
+                
+                start = float(start or 0)
+                end = float(end or 0)
                 
                 # 청크 잘라내기
                 s_idx = max(0, int(round(start * sr)))
@@ -141,7 +170,10 @@ class SpeakerEngine:
                     "score": round(float(best_score), 4)
                 })
         finally:
-            if os.path.exists(temp_seg_path):
+            # 임시 파일 및 폴더 정리
+            if temp_enroll_dir.exists():
+                shutil.rmtree(temp_enroll_dir)
+            if 'temp_seg_path' in locals() and os.path.exists(temp_seg_path):
                 os.remove(temp_seg_path)
 
         end_time = time.time()
