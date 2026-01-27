@@ -14,9 +14,9 @@ DEFAULT_EMPLOYEE_DIR = os.path.abspath(os.path.join(CURRENT_DIR, "..", "resoursc
 
 @router_v1.post("/recognize")
 async def recognize_speaker(
-    audio: UploadFile = File(..., description="분석할 메인 오디오 파일 (WAV)"),
-    whisper_json: UploadFile = File(..., description="Whisper STT 결과 JSON 파일"),
-    threshold: float = Form(0.25, description="화자 일치 임계값 (기본 0.25)")
+    audio: UploadFile = File(..., description="화자를 식별할 원본 음성 파일 (wav, mp3, m4a)"),
+    whisper_json: UploadFile = File(..., description="Whisper STT 결과 JSON 파일 (chunks 포함)"),
+    threshold: float = Form(0.2, description="화자 일치 여부를 판단할 임계값 (보통 0.25~0.35 권장). 이 점수보다 낮으면 'unknown'으로 분류됩니다.")
 ):
     # 임시 파일 저장
     temp_id = str(uuid.uuid4())
