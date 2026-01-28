@@ -39,16 +39,20 @@ async def recognize_speaker(
         # Whisper JSON 읽기
         with open(temp_json, "r", encoding="utf-8") as f:
             whisper_data = json.load(f)
-            chunks = whisper_data.get("chunks", [])
+            
+        # chunks(Whisper) 또는 segments(WhisperX) 키가 있는지 확인
+        if isinstance(whisper_data, dict):
+            valid_data = whisper_data.get("chunks") or whisper_data.get("segments")
+            if valid_data is None:
+                raise HTTPException(status_code=400, detail="No 'chunks' or 'segments' found in Whisper JSON")
+        elif not isinstance(whisper_data, list):
+            raise HTTPException(status_code=400, detail="Invalid Whisper JSON format")
 
-        if not chunks:
-            raise HTTPException(status_code=400, detail="No chunks found in Whisper JSON")
-
-        # 화자 인식 실행
+        # 화자 인식 실행 (whisper_data 전체를 전달)
         engine = get_engine()
         result = engine.identify_speaker(
             temp_audio, 
-            chunks, 
+            whisper_data, 
             target_speakers_path, 
             threshold=threshold
         )
