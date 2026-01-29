@@ -41,19 +41,23 @@ class KiwiTagger:
 
     def is_terminal_ending(self, text: str) -> bool:
         """
-        텍스트에 종결 어미(EF)가 포함되어 있는지 확인합니다.
+        텍스트에 종결 어미(EF) 또는 연결 어미(EC)가 포함되어 있는지 확인합니다.
         """
         if not text.strip() or self.kiwi is None:
             return False
+            
         try:
             analysis = self.kiwi.analyze(text)
             if analysis:
                 tokens = analysis[0][0]
-                return any(t.tag == 'EF' for t in tokens)
+                # EF(종결 어미) 또는 EC(연결 어미)가 하나라도 있으면 분할 후보로 간주
+                return any(t.tag in ['EF', 'EC'] for t in tokens)
         except Exception as e:
-            # [[memory:6804125]]
+            # [[memory:6804125]] 예외 발생 시 로깅
             logger.error(f"Kiwi analysis failed for text '{text}': {e}")
+            # 분석 실패 시 마침표 등으로 보조 판단
             return any(p in text for p in [".", "!", "?"])
+        
         return False
 
 # 싱글톤 인스턴스 생성
