@@ -1,7 +1,7 @@
 import logging
 import re
 from kiwipiepy import Kiwi
-from typing import List, Any
+from typing import List, Any, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -38,6 +38,31 @@ class KiwiTagger:
             # [[memory:6804125]]
             logger.error(f"Kiwi split_into_sents failed: {e}")
             return []
+
+    def get_ending_type(self, text: str) -> Optional[str]:
+        """
+        텍스트의 어미 타입을 반환합니다 (EF, EC, 또는 None).
+        """
+        if not text.strip() or self.kiwi is None:
+            return None
+            
+        try:
+            analysis = self.kiwi.analyze(text)
+            if analysis:
+                tokens = analysis[0][0]
+                # EF가 하나라도 있으면 EF 우선 반환
+                if any(t.tag == 'EF' for t in tokens):
+                    return 'EF'
+                # EC가 있으면 EC 반환
+                if any(t.tag == 'EC' for t in tokens):
+                    return 'EC'
+        except Exception as e:
+            # [[memory:6804125]]
+            logger.error(f"Kiwi analysis failed for text '{text}': {e}")
+            if any(p in text for p in [".", "!", "?"]):
+                return 'EF'
+        
+        return None
 
     def is_terminal_ending(self, text: str) -> bool:
         """
