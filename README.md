@@ -15,7 +15,7 @@ conda activate speech_recognize
 # 의존성 설치
 uv pip install -r requirements.txt
 # 서버 실행
-uv run uvicorn src.api:app --host 0.0.0.0 --port 8011 --reload
+uv run uvicorn src.api:app --host 0.0.0.0 --port 8016 --reload
 ```
 
 ### 2. 컨테이너 환경 실행 (Podman/Docker)
@@ -27,7 +27,7 @@ podman build -t pps/speech_recognize:v0.0.1 -f Dockerfile .
 podman run -d \
   --name speaker-recognize \
   --device nvidia.com/gpu=all \
-  -p 8011:8011 \
+  -p 8016:8016 \
   -v /home/pps-nipa/NIQ/fish/speech_recognize/src/resoursces/models:/app/src/resoursces/models:Z \
   -v /home/pps-nipa/NIQ/fish/speech_recognize/src/resoursces/employee:/app/src/resoursces/employee:Z \
   pps/speech_recognize:v0.0.1
@@ -38,7 +38,7 @@ podman run -d \
 ### 화자 식별 (`POST /v1/recognize`)
 음성 파일과 Whisper 결과를 전송하여 사내 직원 데이터베이스와 비교해 화자를 구분합니다.
 
-- **Endpoint**: `http://localhost:8011/v1/recognize`
+- **Endpoint**: `http://localhost:8016/v1/recognize`
 - **Parameters**:
   - `audio`: 분석할 메인 음성 파일 (WAV 권장)
   - `whisper_json`: Whisper STT 결과 JSON (chunks 리스트 포함)
@@ -47,7 +47,7 @@ podman run -d \
 **cURL 테스트 예시:**
 ```bash
 curl -X 'POST' \
-  'http://localhost:8011/v1/recognize' \
+  'http://localhost:8016/v1/recognize' \
   -H 'Content-Type: multipart/form-data' \
   -F 'audio=@meeting.wav' \
   -F 'whisper_json=@whisper_output.json' \
@@ -55,5 +55,5 @@ curl -X 'POST' \
 ```
 
 ## API 문서 및 모니터링
-- **Swagger UI**: [http://localhost:8011/docs](http://localhost:8011/docs)
-- **Health Check**: [http://localhost:8011/health](http://localhost:8011/health)
+- **Swagger UI**: [http://localhost:8016/docs](http://localhost:8016/docs)
+- **Health Check**: [http://localhost:8016/health](http://localhost:8016/health)

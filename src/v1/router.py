@@ -5,6 +5,7 @@ import os
 import uuid
 import shutil
 from .main import get_engine
+from .utils.json_paser import refine_whisper_json
 
 router_v1 = APIRouter(prefix="/v1", tags=["speaker"])
 
@@ -70,3 +71,26 @@ async def recognize_speaker(
         for p in [temp_audio, temp_json]:
             if os.path.exists(p):
                 os.remove(p)
+
+@router_v1.post("/refine-json")
+async def refine_json(
+    whisper_json: UploadFile = File(..., description="정제할 Whisper STT 결과 JSON 파일")
+):
+    """
+    업로드된 Whisper JSON을 마침표 단위 문장으로 묶고 시간을 재조정하여 반환합니다.
+    """
+    try:
+        content = await whisper_json.read()
+        whisper_data = json.loads(content)
+        
+        refined_data = refine_whisper_json(whisper_data)
+        return {
+            "status": "success",
+            "count": len(refined_data),
+            "results": refined_data
+        }
+    except Exception as e:
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.exception(f"Error in refine_json: {e}")
+        raise HTTPException(status_code=500, detail=str(e))

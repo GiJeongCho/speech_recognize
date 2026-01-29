@@ -33,5 +33,5 @@ ENV PYTHONPATH=/app
 ENV SPEAKER_MODEL_PATH=/app/src/resoursces/models/iic/speech_eres2net_base_sv_zh-cn_3dspeaker_16k
 
 # API 실행 (가상환경의 uvicorn 사용)
-EXPOSE 8011
-CMD ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8011"]
+EXPOSE 8016
+CMD ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8016"]

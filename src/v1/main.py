@@ -7,6 +7,7 @@ import shutil
 from pathlib import Path
 from typing import Dict, List, Tuple, Any, Union
 from modelscope.pipelines import pipeline
+from .utils.json_paser import refine_whisper_json
 
 logger = logging.getLogger(__name__)
 
@@ -113,75 +114,54 @@ class SpeakerEngine:
 
             logger.info(f"Loaded {len(enroll_data)} speakers for identification")
 
-            # 3. 각 청크별 화자 비교
+            # 3. 각 청크별 화자 비교 (refine_whisper_json 유틸 사용)
             results = []
             temp_seg_path = f"/tmp/seg_{int(time.time())}.wav"
 
-            # whisper_data가 Dict(전체 JSON)인지 List(세그먼트 목록)인지 확인
-            # chunks(Whisper) 또는 segments(WhisperX) 키 지원
-            if isinstance(whisper_data, dict):
-                segments = whisper_data.get("segments") or whisper_data.get("chunks") or []
-            else:
-                segments = whisper_data
+            # 외부 유틸리티를 사용하여 문장 단위로 재구성
+            final_chunks = refine_whisper_json(whisper_data)
 
-            for seg in segments:
-                # WhisperX 형식인 경우 'words' 리스트가 존재함. 있으면 단어별로, 없으면 세그먼트별로 처리.
-                words = seg.get("words", [])
-                target_chunks = words if words else [seg]
-
-                for chunk in target_chunks:
-                    # 시간 정보 추출 (start/end 또는 timestamp 리스트 대응)
-                    start = chunk.get("start")
-                    end = chunk.get("end")
+            # 확정된 문장 단위 청크들에 대해 화자 식별 수행
+            for chunk in final_chunks:
+                start, end = chunk["start"], chunk["end"]
+                
+                # 청크 잘라내기
+                s_idx = max(0, int(round(start * sr)))
+                e_idx = min(n_samples, int(round(end * sr)))
+                
+                if e_idx <= s_idx:
+                    continue
                     
-                    if start is None or end is None:
-                        ts = chunk.get("timestamp", [0, 0])
-                        if isinstance(ts, list):
-                            start = ts[0] if len(ts) > 0 else 0
-                            end = ts[1] if len(ts) > 1 else 0
-                        else:
-                            start, end = 0, 0
+                seg_wav = wav[:, s_idx:e_idx]
+                torchaudio.save(temp_seg_path, seg_wav, sr)
+                
+                best_spk = "unknown"
+                best_score = -1.0
+                
+                for spk_name, refs in enroll_data.items():
+                    spk_best = -1.0
+                    for ref_path in refs:
+                        try:
+                            r = self.sv_pipeline([temp_seg_path, str(ref_path)])
+                            score = self.extract_score(r)
+                            if score > spk_best:
+                                spk_best = score
+                        except Exception as e:
+                            # 예외 발생 시 로거를 사용하여 기록 [[memory:6804125]]
+                            logger.error(f"Error comparing {temp_seg_path} with {ref_path}: {e}")
                     
-                    start = float(start or 0)
-                    end = float(end or 0)
-                    
-                    # 청크 잘라내기
-                    s_idx = max(0, int(round(start * sr)))
-                    e_idx = min(n_samples, int(round(end * sr)))
-                    
-                    if e_idx <= s_idx:
-                        continue
-                        
-                    seg_wav = wav[:, s_idx:e_idx]
-                    torchaudio.save(temp_seg_path, seg_wav, sr)
-                    
-                    best_spk = "unknown"
-                    best_score = -1.0
-                    
-                    for spk_name, refs in enroll_data.items():
-                        spk_best = -1.0
-                        for ref_path in refs:
-                            try:
-                                r = self.sv_pipeline([temp_seg_path, str(ref_path)])
-                                score = self.extract_score(r)
-                                if score > spk_best:
-                                    spk_best = score
-                            except Exception as e:
-                                # 예외 발생 시 로거를 사용하여 기록 [[memory:6804125]]
-                                logger.error(f"Error comparing {temp_seg_path} with {ref_path}: {e}")
-                        
-                        if spk_best > best_score:
-                            best_score = spk_best
-                            best_spk = spk_name
-                    
-                    assigned = best_spk if best_score >= threshold else "unknown"
-                    results.append({
-                        "start": start,
-                        "end": end,
-                        "text": chunk.get("text", chunk.get("word", "")), # text 또는 word 키 지원
-                        "speaker": assigned,
-                        "score": round(float(best_score), 4)
-                    })
+                    if spk_best > best_score:
+                        best_score = spk_best
+                        best_spk = spk_name
+                
+                assigned = best_spk if best_score >= threshold else "unknown"
+                results.append({
+                    "start": round(start, 3),
+                    "end": round(end, 3),
+                    "text": chunk["text"],
+                    "speaker": assigned,
+                    "score": round(float(best_score), 4) if best_score != -1.0 else 0.0
+                })
         finally:
             # 임시 파일 및 폴더 정리
             if temp_enroll_dir.exists():
