@@ -8,15 +8,11 @@ logger = logging.getLogger(__name__)
 def refine_whisper_json(whisper_data: Dict[str, Any]) -> List[Dict[str, Any]]:
     """
     정제 로직 단계:
-    1. 분할: EF는 무조건 분리, EC는 다음 단어와 간격이 0.5초 이상일 때 분리, 화자가 바뀌면 분리
-    2. 보완 병합: 분리된 문장 중 1.0초 미만인 것은 '화자가 같을 때만' 앞 문장에 합쳐서 최소 분석 길이 확보
+    1. 화자 단위로 그룹화 (화자가 바뀌면 분리)
+    2. 각 화자 세그먼트 내에서 Kiwi의 split_into_sents 기능을 사용하여 문장 단위로 분할
     """
     raw_segments = whisper_data.get("segments") or whisper_data.get("chunks") or []
     
-    initial_chunks = []
-    current_words = []
-    
-    # [1단계] 단어들을 가져와서 어미 규칙 및 화자 변경에 따라 1차 분할
     all_words = []
     for seg in raw_segments:
         words = seg.get("words", [])
@@ -31,63 +27,73 @@ def refine_whisper_json(whisper_data: Dict[str, Any]) -> List[Dict[str, Any]]:
         else:
             all_words.extend(words)
 
-    for i, w in enumerate(all_words):
-        current_words.append(w)
-        w_text = (w.get("word") or w.get("text", "")).strip()
-        current_speaker = w.get("speaker")
-        
-        should_split = False
-        
-        # 다음 단어 확인
-        next_w = all_words[i+1] if i + 1 < len(all_words) else None
-        
-        # 1. 화자가 바뀌면 무조건 분리
-        if next_w and next_w.get("speaker") != current_speaker:
-            should_split = True
-        
-        # 2. 어미 규칙에 따른 분리 (화자가 같을 때만 추가 체크)
-        if not should_split:
-            ending_type = kiwi_tagger.get_ending_type(w_text)
-            if ending_type == 'EF':
-                should_split = True
-            elif ending_type == 'EC':
-                if next_w:
-                    gap = float(next_w.get("start", 0)) - float(w.get("end", 0))
-                    if gap >= 0.5:
-                        should_split = True
-                else:
-                    should_split = True
-        
-        if should_split:
-            initial_chunks.append({
-                "start": float(current_words[0].get("start", 0)),
-                "end": float(current_words[-1].get("end", 0)),
-                "text": " ".join([(wd.get("word") or wd.get("text", "")).strip() for wd in current_words]),
-                "speaker": current_speaker
-            })
-            current_words = []
-                
-    if current_words:
-        initial_chunks.append({
-            "start": float(current_words[0].get("start", 0)),
-            "end": float(current_words[-1].get("end", 0)),
-            "text": " ".join([(wd.get("word") or wd.get("text", "")).strip() for wd in current_words]),
-            "speaker": current_words[-1].get("speaker")
-        })
+    if not all_words:
+        return []
 
-    # [2단계] 1.0초 미만의 짧은 문장은 '화자가 같을 때만' 이전 문장에 병합
-    final_results = []
-    for chunk in initial_chunks:
-        duration = chunk["end"] - chunk["start"]
-        
-        if duration < 1.0 and final_results:
-            # 이전 문장과 화자가 동일한 경우에만 병합
-            if final_results[-1].get("speaker") == chunk.get("speaker"):
-                final_results[-1]["end"] = chunk["end"]
-                final_results[-1]["text"] += " " + chunk["text"]
-            else:
-                final_results.append(chunk)
+    # 1. 화자별로 연속된 단어들 그룹화
+    speaker_segments = []
+    current_seg = [all_words[0]]
+    for i in range(1, len(all_words)):
+        if all_words[i].get("speaker") == current_seg[-1].get("speaker"):
+            current_seg.append(all_words[i])
         else:
-            final_results.append(chunk)
+            speaker_segments.append(current_seg)
+            current_seg = [all_words[i]]
+    speaker_segments.append(current_seg)
+
+    final_results = []
+    for seg_words in speaker_segments:
+        speaker = seg_words[0].get("speaker")
+        
+        # 단어들을 하나의 텍스트로 합치면서 각 단어의 문자열 위치(offset) 기록
+        text = ""
+        word_map = [] # (start_char, end_char, word_obj)
+        
+        for w in seg_words:
+            w_text = (w.get("word") or w.get("text", "")).strip()
+            if not w_text:
+                continue
             
+            start_char = len(text)
+            if text: # 첫 단어가 아니면 공백 추가
+                text += " "
+                start_char += 1
+            
+            text += w_text
+            end_char = len(text)
+            word_map.append((start_char, end_char, w))
+            
+        if not text:
+            continue
+        
+        # 2. Kiwi를 사용하여 문장 분리 수행
+        try:
+            kiwi_sentences = kiwi_tagger.split_into_sents(text)
+        except Exception as e:
+            logger.error(f"Kiwi split_into_sents failed: {e}")
+            kiwi_sentences = []
+        
+        if not kiwi_sentences:
+            # 분리 실패 시 전체를 하나의 문장으로 처리
+            final_results.append({
+                "start": float(seg_words[0].get("start", 0)),
+                "end": float(seg_words[-1].get("end", 0)),
+                "text": text,
+                "speaker": speaker
+            })
+            continue
+            
+        for sent in kiwi_sentences:
+            # Kiwi 문장 객체의 start/end 오프셋을 기준으로 해당 문장에 포함된 단어들 찾기
+            # 문장 오프셋 내에 걸쳐있는 모든 단어를 선택
+            sent_words = [w for s, e, w in word_map if not (e <= sent.start or s >= sent.end)]
+            
+            if sent_words:
+                final_results.append({
+                    "start": float(sent_words[0].get("start", 0)),
+                    "end": float(sent_words[-1].get("end", 0)),
+                    "text": sent.text,
+                    "speaker": speaker
+                })
+                
     return final_results
