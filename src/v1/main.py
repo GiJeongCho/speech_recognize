@@ -125,6 +125,17 @@ class SpeakerEngine:
             for chunk in final_chunks:
                 start, end = chunk["start"], chunk["end"]
                 
+                # [추가] 0.5초 이하의 매우 짧은 구간은 식별 과정을 건너뜁니다.
+                if chunk.get("speaker") == "very_short":
+                    results.append({
+                        "start": round(start, 3),
+                        "end": round(end, 3),
+                        "text": chunk["text"],
+                        "speaker": "very_short",
+                        "score": 0.0
+                    })
+                    continue
+                
                 # 청크 잘라내기
                 s_idx = max(0, int(round(start * sr)))
                 e_idx = min(n_samples, int(round(end * sr)))
