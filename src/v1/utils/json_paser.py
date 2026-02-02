@@ -1,5 +1,5 @@
 import logging
-from typing import Dict, List, Any, Final
+from typing import Dict, List, Any, Final, Optional
 
 from .kr_tag import kiwi_tagger
 
@@ -13,6 +13,7 @@ SPEAKER_UNKNOWN: Final[str] = "unknown"
 
 def refine_whisper_json(whisper_data: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Whisper 출력을 Kiwi를 사용하여 문장 단위로 정제하고 짧은 구간을 분류합니다.
+    (최상위 segments/chunks 키 또는 result.segments 구조 지원)
 
     로직 단계:
     1. 모든 단어(words)를 시간 순서대로 추출합니다.
@@ -26,7 +27,18 @@ def refine_whisper_json(whisper_data: Dict[str, Any]) -> List[Dict[str, Any]]:
     Returns:
         List[Dict[str, Any]]: 정제된 문장 단위 조각 리스트.
     """
-    raw_segments = whisper_data.get("segments") or whisper_data.get("chunks") or []
+    # 1. Segments/Chunks 추출
+    # 우선 최상위 레벨에서 segments/chunks 확인
+    raw_segments: Optional[List[Dict[str, Any]]] = whisper_data.get("segments") or whisper_data.get("chunks")
+
+    # 없다면 result 키 내부 확인 (새로운 포맷 대응: response_*.json)
+    if raw_segments is None and "result" in whisper_data:
+        result_payload = whisper_data["result"]
+        if isinstance(result_payload, dict):
+            raw_segments = result_payload.get("segments")
+
+    # 여전히 없으면 빈 리스트
+    raw_segments = raw_segments or []
     
     all_words: List[Dict[str, Any]] = []
     for seg in raw_segments:
@@ -103,6 +115,5 @@ def refine_whisper_json(whisper_data: Dict[str, Any]) -> List[Dict[str, Any]]:
                     "text": sent.text,
                     "speaker": SPEAKER_VERY_SHORT if duration < MIN_SPEAKER_DURATION else SPEAKER_UNKNOWN
                 })
-                
+            
     return final_results
-
