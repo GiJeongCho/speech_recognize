@@ -116,4 +116,19 @@ def refine_whisper_json(whisper_data: Dict[str, Any]) -> List[Dict[str, Any]]:
                     "speaker": SPEAKER_VERY_SHORT if duration < MIN_SPEAKER_DURATION else SPEAKER_UNKNOWN
                 })
             
-    return final_results
+    # 후처리: 0.2초 이하인 짧은 구간은 이전 문장에 병합
+    merged_results: List[Dict[str, Any]] = []
+    for res in final_results:
+        duration = res["end"] - res["start"]
+        
+        # 0.2초 이하이고 이전에 처리된 결과가 있다면 병합
+        if duration <= 0.2 and merged_results:
+            prev = merged_results[-1]
+            prev["end"] = res["end"]  # 시간 확장
+            prev["text"] += " " + res["text"] # 텍스트 연결
+            # 만약 병합으로 인해 길이가 충분해졌다면 speaker 태그 업데이트 가능하지만,
+            # main.py에서 재평가되므로 여기서는 시간/텍스트만 합침
+        else:
+            merged_results.append(res)
+
+    return merged_results

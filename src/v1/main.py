@@ -148,6 +148,15 @@ class SpeakerEngine:
                     continue
                     
                 seg_wav = wav[:, s_idx:e_idx]
+
+                # 0.5초 미만의 짧은 오디오는 복제하여 길이를 늘림 (화자 식별 정확도 향상)
+                # 0.2초 이하 구간은 이미 json_parser에서 병합되었으므로, 여기서는 0.2~0.5초 구간이 주 대상
+                seg_duration = seg_wav.size(1) / sr
+                if seg_duration > 0 and seg_duration < 0.5:
+                    # 0.5초 이상이 될 때까지 반복 (최소 2배)
+                    repeat_count = int(0.5 / seg_duration) + 1
+                    seg_wav = seg_wav.repeat(1, repeat_count)
+
                 torchaudio.save(temp_seg_path, seg_wav, sr)
                 
                 best_spk = "unknown"
