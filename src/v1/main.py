@@ -5,7 +5,7 @@ import logging
 import time
 import shutil
 from pathlib import Path
-from typing import Dict, List, Tuple, Any, Union
+from typing import Dict, List, Tuple, Any, Union, Callable, Optional
 from modelscope.pipelines import pipeline
 from .utils.json_paser import refine_whisper_json
 
@@ -59,9 +59,15 @@ class SpeakerEngine:
         full_audio_path: str, 
         whisper_data: Union[Dict, List[Dict]], 
         speakers_root: str, 
-        threshold: float = 0.1
+        threshold: float = 0.1,
+        progress_callback: Optional[Callable[[float], None]] = None
     ) -> Dict:
         start_time = time.time()
+        
+        # 초기 진행률 보고 (작업 시작)
+        if progress_callback:
+            progress_callback(1.0)
+
         # 1. 원본 오디오 로드 및 전처리
         wav, sr = torchaudio.load(full_audio_path)
         wav = self.ensure_mono_16k(wav, sr)
@@ -69,11 +75,15 @@ class SpeakerEngine:
         n_samples = wav.size(1)
 
         # 2. 기준 화자(Enrollment) 파일 목록 확보 및 전처리 (16k mono WAV로 변환)
+        # 이 과정을 전체 공정의 약 10%로 간주
         speakers_path = Path(speakers_root)
         enroll_data = {}
-        temp_enroll_dir = Path(f"/tmp/enroll_{int(time.time())}")
+        temp_enroll_dir = Path(f"/tmp/enroll_{int(time.time())}_{os.getpid()}")
         temp_enroll_dir.mkdir(parents=True, exist_ok=True)
         
+        if progress_callback:
+            progress_callback(5.0)
+
         try:
             if speakers_path.exists():
                 # speakers_root 아래의 각 디렉토리를 화자로 간주
@@ -113,16 +123,21 @@ class SpeakerEngine:
                 raise RuntimeError(f"No speaker enrollment files found in {speakers_root}")
 
             logger.info(f"Loaded {len(enroll_data)} speakers for identification")
+            
+            # Enrollment 완료 시점 (10%)
+            if progress_callback:
+                progress_callback(10.0)
 
             # 3. 각 청크별 화자 비교 (refine_whisper_json 유틸 사용)
             results = []
-            temp_seg_path = f"/tmp/seg_{int(time.time())}.wav"
+            temp_seg_path = f"/tmp/seg_{int(time.time())}_{os.getpid()}.wav"
 
             # 외부 유틸리티를 사용하여 문장 단위로 재구성
             final_chunks = refine_whisper_json(whisper_data)
+            total_chunks = len(final_chunks)
 
             # 확정된 문장 단위 청크들에 대해 화자 식별 수행
-            for chunk in final_chunks:
+            for i, chunk in enumerate(final_chunks):
                 start, end = chunk["start"], chunk["end"]
                 
                 # 청크 잘라내기
@@ -162,6 +177,13 @@ class SpeakerEngine:
                     "speaker": assigned,
                     "score": round(float(best_score), 4) if best_score != -1.0 else 0.0
                 })
+
+                # 진행률 업데이트 (10% ~ 99%)
+                # 남은 90%를 청크 개수로 나누어 할당
+                if progress_callback and total_chunks > 0:
+                    current_percent = 10.0 + (float(i + 1) / total_chunks * 89.0)
+                    progress_callback(current_percent)
+
         finally:
             # 임시 파일 및 폴더 정리
             if temp_enroll_dir.exists():
@@ -170,6 +192,8 @@ class SpeakerEngine:
                 os.remove(temp_seg_path)
 
         end_time = time.time()
+        
+        # 완료 시 100% 호출은 하지 않음 (외부 JobManager에서 완료 처리 시 수행)
         return {
             "status": "success",
             "processing_time": f"{round(end_time - start_time, 2)}s",
