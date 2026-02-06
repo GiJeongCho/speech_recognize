@@ -6,7 +6,7 @@ import uuid
 import shutil
 import logging
 from .main import get_engine
-from .utils.json_paser import refine_whisper_json
+from .utils.json_paser import refine_whisper_json, extract_segments
 from .utils.job import job_manager, JobInfo
 
 logger = logging.getLogger(__name__)
@@ -35,23 +35,38 @@ def _background_recognition_task(
         # 1. Whisper JSON 읽기
         with open(json_path, "r", encoding="utf-8") as f:
             whisper_data = json.load(f)
+            logger.info(f"Loaded JSON keys: {list(whisper_data.keys())}")
+            if "result" in whisper_data:
+                logger.info(f"Result type: {type(whisper_data['result'])}")
+                if isinstance(whisper_data['result'], dict):
+                     logger.info(f"Result keys: {list(whisper_data['result'].keys())}")
             
         # chunks(Whisper) 또는 segments(WhisperX) 키가 있는지 확인
-        valid_data = None
+        # json_paser의 유틸 함수를 사용하여 일관된 방식으로 추출
         if isinstance(whisper_data, dict):
-            # 1순위: 최상위 segments/chunks
-            valid_data = whisper_data.get("chunks") or whisper_data.get("segments")
+            # 딕셔너리인 경우 extract_segments 사용
+            valid_segments = extract_segments(whisper_data)
+            if not valid_segments:
+                # 디버깅을 위한 상세 정보 포함
+                keys = list(whisper_data.keys())
+                result_keys = list(whisper_data["result"].keys()) if "result" in whisper_data and isinstance(whisper_data["result"], dict) else "N/A"
+                raise ValueError(f"No 'chunks' or 'segments' found in Whisper JSON. Root keys: {keys}, Result keys: {result_keys}")
             
-            # 2순위: result 내부의 segments (빔탐색2.json 같은 구조 대응)
-            if valid_data is None and "result" in whisper_data:
-                result_payload = whisper_data["result"]
-                if isinstance(result_payload, dict):
-                    valid_data = result_payload.get("segments") or result_payload.get("chunks")
-
-            if valid_data is None:
-                raise ValueError("No 'chunks' or 'segments' found in Whisper JSON (checked root and 'result' key)")
+            # extract_segments는 리스트를 반환하지만, identify_speaker는 원본 구조(whisper_data)를 기대함.
+            # identify_speaker 내부에서 다시 refine_whisper_json -> extract_segments를 호출하므로
+            # 여기서는 '데이터가 유효한지'만 체크하고 whisper_data를 그대로 넘기면 됨.
+            
         elif isinstance(whisper_data, list):
-            valid_data = whisper_data # list itself is likely segments
+            # 리스트인 경우 그 자체가 세그먼트 리스트라고 가정
+            if not whisper_data:
+                raise ValueError("Whisper JSON is an empty list")
+            # 리스트인 경우 호환성을 위해 딕셔너리로 감싸서 넘기는 것이 안전할 수 있음 (extract_segments가 dict를 받으므로)
+            # 하지만 identify_speaker -> refine_whisper_json -> extract_segments 구조를 생각하면
+            # whisper_data가 list일 때 refine_whisper_json이 실패할 수 있음 (Signature: Dict -> List).
+            
+            # json_paser.py의 refine_whisper_json은 Dict[str, Any]를 인자로 받음.
+            # 따라서 list가 들어오면 감싸줘야 함.
+            whisper_data = {"segments": whisper_data}
         else:
             raise ValueError("Invalid Whisper JSON format")
 
