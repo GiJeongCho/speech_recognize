@@ -37,10 +37,19 @@ def _background_recognition_task(
             whisper_data = json.load(f)
             
         # chunks(Whisper) 또는 segments(WhisperX) 키가 있는지 확인
+        valid_data = None
         if isinstance(whisper_data, dict):
+            # 1순위: 최상위 segments/chunks
             valid_data = whisper_data.get("chunks") or whisper_data.get("segments")
+            
+            # 2순위: result 내부의 segments (빔탐색2.json 같은 구조 대응)
+            if valid_data is None and "result" in whisper_data:
+                result_payload = whisper_data["result"]
+                if isinstance(result_payload, dict):
+                    valid_data = result_payload.get("segments") or result_payload.get("chunks")
+
             if valid_data is None:
-                raise ValueError("No 'chunks' or 'segments' found in Whisper JSON")
+                raise ValueError("No 'chunks' or 'segments' found in Whisper JSON (checked root and 'result' key)")
         elif isinstance(whisper_data, list):
             valid_data = whisper_data # list itself is likely segments
         else:
