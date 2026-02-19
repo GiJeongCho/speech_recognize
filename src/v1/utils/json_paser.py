@@ -216,24 +216,62 @@ def _split_group_by_kiwi(group: SpeakerGroup) -> List[ChunkInternal]:
 
 
 def _merge_short_segments(chunks: List[ChunkInternal]) -> List[ChunkInternal]:
-    merged_results: List[ChunkInternal] = []
+    if not chunks:
+        return []
 
-    for res in chunks:
-        duration = res.end - res.start
+    final_results: List[ChunkInternal] = []
+    # 리스트 복사 (뒤쪽 병합 시 다음 청크를 수정해야 하므로)
+    processing_chunks = chunks[:]
+    
+    i = 0
+    n = len(processing_chunks)
+    
+    while i < n:
+        curr = processing_chunks[i]
+        duration = curr.end - curr.start
+        
+        # 0.2초 초과면 정상 청크로 간주하여 결과에 추가
+        if duration > 0.2:
+            final_results.append(curr)
+            i += 1
+            continue
+            
+        # --- 0.2초 이하인 경우: 앞뒤 거리 비교하여 더 가까운 쪽에 병합 ---
+        
+        # 1. 앞쪽 청크와 거리 계산
+        prev = final_results[-1] if final_results else None
+        gap_prev = float('inf')
+        if prev:
+            gap_prev = curr.start - prev.end
+            
+        # 2. 뒤쪽 청크와 거리 계산
+        next_chunk = None
+        gap_next = float('inf')
+        if i + 1 < n:
+            next_chunk = processing_chunks[i+1]
+            gap_next = next_chunk.start - curr.end
+            
+        # 3. 앞뒤 모두 없으면(단독 0.2초 이하) 그냥 추가
+        if not prev and not next_chunk:
+            final_results.append(curr)
+            i += 1
+            continue
 
-        if duration <= 0.2 and merged_results:
-            prev = merged_results[-1]
-            if prev.has_explicit_speaker or res.has_explicit_speaker:
-                if prev.speaker != res.speaker or prev.has_explicit_speaker != res.has_explicit_speaker:
-                    merged_results.append(res)
-                    continue
-
-            prev.end = res.end
-            prev.text = f"{prev.text} {res.text}".strip()
+        # 4. 거리 비교 및 병합 (같으면 앞쪽 우선)
+        if gap_prev <= gap_next:
+            # 앞쪽에 병합 (앞 화자에게 할당)
+            prev.end = curr.end
+            prev.text = f"{prev.text} {curr.text}".strip()
         else:
-            merged_results.append(res)
+            # 뒤쪽에 병합 (뒤 화자에게 할당)
+            # 다음 청크의 시작 시간을 당기고 텍스트를 앞에 붙임
+            next_chunk.start = curr.start
+            next_chunk.text = f"{curr.text} {next_chunk.text}".strip()
+            
+        # 현재 청크(curr)는 병합되어 사라졌으므로 final_results에 추가하지 않고 넘어감
+        i += 1
 
-    return merged_results
+    return final_results
 
 
 def refine_whisper_json(whisper_data: Dict[str, Any]) -> List[RefinedChunk]:

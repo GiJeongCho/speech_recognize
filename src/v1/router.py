@@ -33,13 +33,19 @@ def _background_recognition_task(
             job_manager.update_progress(job_id, p)
 
         # 1. Whisper JSON 읽기
-        with open(json_path, "r", encoding="utf-8") as f:
-            whisper_data = json.load(f)
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                whisper_data = json.load(f)
+                
             logger.info(f"Loaded JSON keys: {list(whisper_data.keys())}")
             if "result" in whisper_data:
                 logger.info(f"Result type: {type(whisper_data['result'])}")
                 if isinstance(whisper_data['result'], dict):
                      logger.info(f"Result keys: {list(whisper_data['result'].keys())}")
+        except UnicodeDecodeError:
+            raise ValueError("The uploaded JSON file is not UTF-8 encoded or is a binary file. Please upload a valid UTF-8 JSON file.")
+        except json.JSONDecodeError:
+            raise ValueError("The uploaded file is not a valid JSON file.")
             
         # chunks(Whisper) 또는 segments(WhisperX) 키가 있는지 확인
         # json_paser의 유틸 함수를 사용하여 일관된 방식으로 추출
@@ -50,7 +56,13 @@ def _background_recognition_task(
                 # 디버깅을 위한 상세 정보 포함
                 keys = list(whisper_data.keys())
                 result_keys = list(whisper_data["result"].keys()) if "result" in whisper_data and isinstance(whisper_data["result"], dict) else "N/A"
-                raise ValueError(f"No 'chunks' or 'segments' found in Whisper JSON. Root keys: {keys}, Result keys: {result_keys}")
+                
+                # 사용자가 Job Status JSON을 넣었을 경우에 대한 힌트 제공
+                hint = ""
+                if "job_id" in keys and "status" in keys:
+                    hint = " (It seems you uploaded a Job Status response instead of Whisper STT result)"
+                
+                raise ValueError(f"No 'chunks' or 'segments' found in Whisper JSON.{hint} Root keys: {keys}, Result keys: {result_keys}")
             
             # extract_segments는 리스트를 반환하지만, identify_speaker는 원본 구조(whisper_data)를 기대함.
             # identify_speaker 내부에서 다시 refine_whisper_json -> extract_segments를 호출하므로

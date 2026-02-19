@@ -227,7 +227,7 @@ class SpeakerEngine:
                         best_identified = name
                 
                 # 해당 화자가 전체의 80% 이상을 차지하면, 나머지도 그 사람으로 간주
-                if best_identified and (max_count / total >= 0.8):
+                if best_identified and (max_count / total >= 0.99):
                     mapping[orig] = best_identified
                 else:
                     # 그렇지 않으면 원본 화자(SPEAKER_XX) 사용 (외부 화자 처리)
