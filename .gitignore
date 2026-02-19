@@ -2,6 +2,8 @@
 *.th
 pretrain/
 model/
+src/resoursces/models/
+src/resoursces/model/
 output/
 testdata/
 speaker_chunks/
