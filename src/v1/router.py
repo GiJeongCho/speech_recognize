@@ -1,5 +1,5 @@
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException, BackgroundTasks
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import json
 import os
 import uuid
@@ -17,12 +17,31 @@ router_v1 = APIRouter(prefix="/v1", tags=["speaker"])
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_EMPLOYEE_DIR = os.path.abspath(os.path.join(CURRENT_DIR, "..", "resoursces", "employee"))
 
+def _assign_mic_speakers(
+    results: List[Dict[str, Any]],
+    mic_results: List[Dict[str, Any]],
+) -> List[Dict[str, Any]]:
+    """mic_speech_recognize 화자 구간을 ERes2Net 결과에 매핑한다.
+
+    각 세그먼트의 중간 시점이 어떤 mic 화자 구간에 속하는지 판단하여
+    speaker 필드를 mic 화자 이름으로 교체한다.
+    """
+    for seg in results:
+        seg_mid = (seg.get("start", 0) + seg.get("end", 0)) / 2.0
+        for mic_seg in mic_results:
+            if mic_seg["start"] <= seg_mid < mic_seg["end"]:
+                seg["speaker"] = mic_seg["speaker"]
+                break
+    return results
+
+
 def _background_recognition_task(
     job_id: str, 
     audio_path: str, 
     json_path: str, 
     threshold: float,
-    speakers_path: str
+    speakers_path: str,
+    mic_speaker_results: Optional[List[Dict[str, Any]]] = None,
 ):
     """
     백그라운드에서 실행되는 화자 인식 작업 함수
@@ -47,37 +66,21 @@ def _background_recognition_task(
         except json.JSONDecodeError:
             raise ValueError("The uploaded file is not a valid JSON file.")
             
-        # chunks(Whisper) 또는 segments(WhisperX) 키가 있는지 확인
-        # json_paser의 유틸 함수를 사용하여 일관된 방식으로 추출
         if isinstance(whisper_data, dict):
-            # 딕셔너리인 경우 extract_segments 사용
             valid_segments = extract_segments(whisper_data)
             if not valid_segments:
-                # 디버깅을 위한 상세 정보 포함
                 keys = list(whisper_data.keys())
                 result_keys = list(whisper_data["result"].keys()) if "result" in whisper_data and isinstance(whisper_data["result"], dict) else "N/A"
                 
-                # 사용자가 Job Status JSON을 넣었을 경우에 대한 힌트 제공
                 hint = ""
                 if "job_id" in keys and "status" in keys:
                     hint = " (It seems you uploaded a Job Status response instead of Whisper STT result)"
                 
                 raise ValueError(f"No 'chunks' or 'segments' found in Whisper JSON.{hint} Root keys: {keys}, Result keys: {result_keys}")
             
-            # extract_segments는 리스트를 반환하지만, identify_speaker는 원본 구조(whisper_data)를 기대함.
-            # identify_speaker 내부에서 다시 refine_whisper_json -> extract_segments를 호출하므로
-            # 여기서는 '데이터가 유효한지'만 체크하고 whisper_data를 그대로 넘기면 됨.
-            
         elif isinstance(whisper_data, list):
-            # 리스트인 경우 그 자체가 세그먼트 리스트라고 가정
             if not whisper_data:
                 raise ValueError("Whisper JSON is an empty list")
-            # 리스트인 경우 호환성을 위해 딕셔너리로 감싸서 넘기는 것이 안전할 수 있음 (extract_segments가 dict를 받으므로)
-            # 하지만 identify_speaker -> refine_whisper_json -> extract_segments 구조를 생각하면
-            # whisper_data가 list일 때 refine_whisper_json이 실패할 수 있음 (Signature: Dict -> List).
-            
-            # json_paser.py의 refine_whisper_json은 Dict[str, Any]를 인자로 받음.
-            # 따라서 list가 들어오면 감싸줘야 함.
             whisper_data = {"segments": whisper_data}
         else:
             raise ValueError("Invalid Whisper JSON format")
@@ -92,16 +95,20 @@ def _background_recognition_task(
             progress_callback=update_progress
         )
 
-        # 3. 작업 완료 처리
+        # 3. mic_output_json이 있으면 화자 이름 매핑
+        if mic_speaker_results and "results" in result:
+            result["results"] = _assign_mic_speakers(result["results"], mic_speaker_results)
+            result["mic_speaker_applied"] = True
+
+        # 4. 작업 완료 처리
         job_manager.complete_job(job_id, result)
         logger.info(f"Job {job_id} completed successfully.")
 
     except Exception as e:
-        logger.exception(f"Job {job_id} failed: {e}") # [[memory:6804125]]
+        logger.exception(f"Job {job_id} failed: {e}")
         job_manager.fail_job(job_id, str(e))
         
     finally:
-        # 임시 파일 정리 (작업 종료 후)
         for p in [audio_path, json_path]:
             try:
                 if os.path.exists(p):
@@ -114,18 +121,25 @@ async def recognize_speaker(
     background_tasks: BackgroundTasks,
     audio: UploadFile = File(..., description="화자를 식별할 원본 음성 파일 (wav, mp3, m4a)"),
     whisper_json: UploadFile = File(..., description="Whisper STT 결과 JSON 파일 (chunks 포함)"),
-    threshold: float = Form(0.2, description="화자 일치 여부를 판단할 임계값")
+    threshold: float = Form(0.2, description="화자 일치 여부를 판단할 임계값"),
+    mic_output_json: Optional[UploadFile] = File(
+        None,
+        description="mic_speech_recognize 결과 JSON 파일. "
+                    "제공하면 ERes2Net 결과에 실제 화자 이름을 매핑합니다.",
+    ),
 ):
     """
     화자 인식 작업을 시작하고 Job ID를 반환합니다.
     진행 상황은 GET /v1/jobs/{job_id} 로 확인할 수 있습니다.
+
+    mic_output_json을 함께 보내면, ERes2Net으로 식별한 화자(직원 DB 기반)에 추가로
+    mic_speech_recognize의 RMS 화자 구간 정보를 매핑하여 최종 화자 이름을 결정합니다.
     """
     # 1. Job ID 생성
     job_id = str(uuid.uuid4())
     job_manager.create_job(job_id)
 
-    # 2. 파일 임시 저장 (Background Task에서 접근 가능하도록)
-    # /tmp 디렉토리에 job_id를 prefix로 사용하여 저장
+    # 2. 파일 임시 저장
     temp_audio = f"/tmp/{job_id}_{audio.filename}"
     temp_json = f"/tmp/{job_id}_{whisper_json.filename}"
 
@@ -139,22 +153,43 @@ async def recognize_speaker(
         job_manager.fail_job(job_id, f"File upload failed: {e}")
         raise HTTPException(status_code=500, detail="File upload failed")
 
-    # 3. 사내 직원 DB 경로 확인
+    # 3. mic_output_json 파싱
+    mic_speaker_results: Optional[List[Dict[str, Any]]] = None
+    if mic_output_json is not None:
+        try:
+            raw = await mic_output_json.read()
+            mic_data = json.loads(raw)
+            if isinstance(mic_data, dict):
+                mic_speaker_results = (
+                    mic_data.get("results")
+                    or mic_data.get("result", {}).get("results")
+                )
+            elif isinstance(mic_data, list):
+                mic_speaker_results = mic_data
+        except (json.JSONDecodeError, KeyError) as e:
+            if os.path.exists(temp_audio): os.remove(temp_audio)
+            if os.path.exists(temp_json): os.remove(temp_json)
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid mic_output_json format: {e}",
+            )
+
+    # 4. 사내 직원 DB 경로 확인
     target_speakers_path = os.getenv("EMPLOYEE_DB_PATH", DEFAULT_EMPLOYEE_DIR)
     if not os.path.exists(target_speakers_path):
-        # 파일은 삭제하고 에러 처리
         if os.path.exists(temp_audio): os.remove(temp_audio)
         if os.path.exists(temp_json): os.remove(temp_json)
         raise HTTPException(status_code=500, detail=f"Employee DB path not found: {target_speakers_path}")
 
-    # 4. 백그라운드 작업 등록
+    # 5. 백그라운드 작업 등록
     background_tasks.add_task(
         _background_recognition_task,
         job_id,
         temp_audio,
         temp_json,
         threshold,
-        target_speakers_path
+        target_speakers_path,
+        mic_speaker_results,
     )
 
     return {"job_id": job_id, "status": "pending"}
