@@ -1,0 +1,7048 @@
+{
+  "status": "completed",
+  "created_at": "2026-02-19T14:48:33.598409+09:00",
+  "filename": "POC 스크럼.m4a",
+  "started_at": "2026-02-19T14:48:33.600136+09:00",
+  "progress": {
+    "step": "done",
+    "percent": 100
+  },
+  "completed_at": "2026-02-19T14:48:48.590161+09:00",
+  "result": {
+    "segments": [
+      {
+        "start": 6.646,
+        "end": 27.242,
+        "text": " 저희가 얘기할 게 좀 얘기할 건 아니고 깊게 얘기해야 될 부분들이 있어가지고 지난주에 좀 정리된 거를 말씀드릴게요.",
+        "words": [
+          {
+            "word": "저희가",
+            "start": 6.646,
+            "end": 26.02,
+            "score": 0.325,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기할",
+            "start": 26.04,
+            "end": 26.1,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "게",
+            "start": 26.12,
+            "end": 26.14,
+            "score": 0.02,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좀",
+            "start": 26.161,
+            "end": 26.181,
+            "score": 0.019,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기할",
+            "start": 26.201,
+            "end": 26.261,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "건",
+            "start": 26.281,
+            "end": 26.301,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "아니고",
+            "start": 26.321,
+            "end": 26.381,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "깊게",
+            "start": 26.401,
+            "end": 26.441,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기해야",
+            "start": 26.461,
+            "end": 26.541,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "될",
+            "start": 26.561,
+            "end": 26.581,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "부분들이",
+            "start": 26.601,
+            "end": 26.681,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "있어가지고",
+            "start": 26.701,
+            "end": 26.802,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "지난주에",
+            "start": 26.822,
+            "end": 26.902,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좀",
+            "start": 26.922,
+            "end": 26.942,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "정리된",
+            "start": 26.962,
+            "end": 27.022,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "거를",
+            "start": 27.042,
+            "end": 27.082,
+            "score": 0.011,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "말씀드릴게요.",
+            "start": 27.102,
+            "end": 27.242,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 27.262,
+        "end": 28.705,
+        "text": "저희 금요일 오전에 얘기 나눴던 거라 주변에 앉아계셨기 때문에 많이 들으셨겠지만 저희가 지금 온난화 연동이 제일 심각하고",
+        "words": [
+          {
+            "word": "저희",
+            "start": 27.262,
+            "end": 27.303,
+            "score": 0.019,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "금요일",
+            "start": 27.323,
+            "end": 27.383,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "오전에",
+            "start": 27.403,
+            "end": 27.463,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기",
+            "start": 27.483,
+            "end": 27.523,
+            "score": 0.083,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "나눴던",
+            "start": 27.543,
+            "end": 27.603,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "거라",
+            "start": 27.623,
+            "end": 27.663,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "주변에",
+            "start": 27.683,
+            "end": 27.743,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "앉아계셨기",
+            "start": 27.763,
+            "end": 27.864,
+            "score": 0.026,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "때문에",
+            "start": 27.884,
+            "end": 27.944,
+            "score": 0.008,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "많이",
+            "start": 27.964,
+            "end": 28.004,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "들으셨겠지만",
+            "start": 28.024,
+            "end": 28.144,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희가",
+            "start": 28.164,
+            "end": 28.224,
+            "score": 0.107,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "지금",
+            "start": 28.244,
+            "end": 28.284,
+            "score": 0.14,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "온난화",
+            "start": 28.304,
+            "end": 28.364,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "연동이",
+            "start": 28.384,
+            "end": 28.445,
+            "score": 0.038,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "제일",
+            "start": 28.465,
+            "end": 28.505,
+            "score": 0.412,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "심각하고",
+            "start": 28.625,
+            "end": 28.705,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 35.688,
+        "end": 54.405,
+        "text": " 그리고 개발 입장에서도 딥이나 아니면 에이전트 학습 과정에서 어떻게 해야 되는지에 대해서 파악이 돼야 되는 부분인데 이게 지금 전혀 약간 위태로운 상황이어서 이거는 비즈니스 쪽으로 풀어야 되는 부분이어서",
+        "words": [
+          {
+            "word": "그리고",
+            "start": 35.688,
+            "end": 52.201,
+            "score": 0.324,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "개발",
+            "start": 52.221,
+            "end": 52.261,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "입장에서도",
+            "start": 52.281,
+            "end": 52.381,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "딥이나",
+            "start": 52.401,
+            "end": 52.461,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "아니면",
+            "start": 52.481,
+            "end": 52.541,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "에이전트",
+            "start": 52.561,
+            "end": 52.642,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "학습",
+            "start": 52.662,
+            "end": 52.702,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "과정에서",
+            "start": 52.722,
+            "end": 52.802,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "어떻게",
+            "start": 52.822,
+            "end": 52.882,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "해야",
+            "start": 52.902,
+            "end": 52.942,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "되는지에",
+            "start": 52.962,
+            "end": 53.042,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "대해서",
+            "start": 53.062,
+            "end": 53.123,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "파악이",
+            "start": 53.143,
+            "end": 53.203,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "돼야",
+            "start": 53.223,
+            "end": 53.263,
+            "score": 0.02,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "되는",
+            "start": 53.283,
+            "end": 53.323,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "부분인데",
+            "start": 53.343,
+            "end": 53.423,
+            "score": 0.01,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이게",
+            "start": 53.443,
+            "end": 53.483,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "지금",
+            "start": 53.503,
+            "end": 53.543,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "전혀",
+            "start": 53.563,
+            "end": 53.603,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "약간",
+            "start": 53.623,
+            "end": 53.664,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "위태로운",
+            "start": 53.684,
+            "end": 53.764,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "상황이어서",
+            "start": 53.784,
+            "end": 53.884,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이거는",
+            "start": 53.904,
+            "end": 53.964,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "비즈니스",
+            "start": 53.984,
+            "end": 54.064,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "쪽으로",
+            "start": 54.084,
+            "end": 54.145,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "풀어야",
+            "start": 54.165,
+            "end": 54.225,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "되는",
+            "start": 54.245,
+            "end": 54.285,
+            "score": 0.015,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "부분이어서",
+            "start": 54.305,
+            "end": 54.405,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 54.706,
+        "end": 84.645,
+        "text": " 오후쯤에 영업분들 모셔두고 이거를 어떻게 풀어야 되는지 얘기를 하려고 합니다 방법 같은 경우에는 두 가지 정도가 있을 것 같은데 온나라랑 직접 파트너십 형태로 해서 직접 들어가는 방법이 있을 것 같고 두 번째로는 수요기관의 요청에 따라서 온나라의 데이터를 요청하는 것 그리고 제가 봤을 때는 후자가 가장 가능성이 높아 보이거든요 근데 이 부분은 저의 역량이 아니어서 이거는 영업 쪽에다가",
+        "words": [
+          {
+            "word": "오후쯤에",
+            "start": 54.706,
+            "end": 55.247,
+            "score": 0.358,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "영업분들",
+            "start": 80.42,
+            "end": 80.5,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "모셔두고",
+            "start": 80.52,
+            "end": 80.6,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이거를",
+            "start": 80.62,
+            "end": 80.68,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "어떻게",
+            "start": 80.7,
+            "end": 80.76,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "풀어야",
+            "start": 80.78,
+            "end": 80.84,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "되는지",
+            "start": 80.86,
+            "end": 80.92,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기를",
+            "start": 80.94,
+            "end": 81,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하려고",
+            "start": 81.02,
+            "end": 81.08,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "합니다",
+            "start": 81.1,
+            "end": 81.16,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "방법",
+            "start": 81.181,
+            "end": 81.221,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같은",
+            "start": 81.241,
+            "end": 81.281,
+            "score": 0.016,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "경우에는",
+            "start": 81.301,
+            "end": 81.381,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "두",
+            "start": 81.401,
+            "end": 81.421,
+            "score": 0.026,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "가지",
+            "start": 81.441,
+            "end": 81.481,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "정도가",
+            "start": 81.501,
+            "end": 81.561,
+            "score": 0.034,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "있을",
+            "start": 81.581,
+            "end": 81.621,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 81.641,
+            "end": 81.661,
+            "score": 0.012,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같은데",
+            "start": 81.681,
+            "end": 81.741,
+            "score": 0.016,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "온나라랑",
+            "start": 81.761,
+            "end": 81.841,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "직접",
+            "start": 81.861,
+            "end": 81.901,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "파트너십",
+            "start": 81.921,
+            "end": 82.002,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "형태로",
+            "start": 82.022,
+            "end": 82.082,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "해서",
+            "start": 82.102,
+            "end": 82.142,
+            "score": 0.02,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "직접",
+            "start": 82.162,
+            "end": 82.202,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "들어가는",
+            "start": 82.222,
+            "end": 82.302,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "방법이",
+            "start": 82.322,
+            "end": 82.382,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "있을",
+            "start": 82.402,
+            "end": 82.442,
+            "score": 0.012,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 82.462,
+            "end": 82.482,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같고",
+            "start": 82.502,
+            "end": 82.542,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "두",
+            "start": 82.562,
+            "end": 82.582,
+            "score": 0.018,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "번째로는",
+            "start": 82.602,
+            "end": 82.682,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "수요기관의",
+            "start": 82.702,
+            "end": 82.803,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "요청에",
+            "start": 82.823,
+            "end": 82.883,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "따라서",
+            "start": 82.903,
+            "end": 82.963,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "온나라의",
+            "start": 82.983,
+            "end": 83.063,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "데이터를",
+            "start": 83.083,
+            "end": 83.163,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "요청하는",
+            "start": 83.183,
+            "end": 83.263,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 83.283,
+            "end": 83.303,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그리고",
+            "start": 83.323,
+            "end": 83.383,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "제가",
+            "start": 83.403,
+            "end": 83.443,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "봤을",
+            "start": 83.463,
+            "end": 83.504,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "때는",
+            "start": 83.524,
+            "end": 83.564,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "후자가",
+            "start": 83.584,
+            "end": 83.644,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "가장",
+            "start": 83.664,
+            "end": 83.704,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "가능성이",
+            "start": 83.724,
+            "end": 83.804,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "높아",
+            "start": 83.824,
+            "end": 83.864,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "보이거든요",
+            "start": 83.884,
+            "end": 83.984,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "근데",
+            "start": 84.004,
+            "end": 84.044,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이",
+            "start": 84.064,
+            "end": 84.084,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "부분은",
+            "start": 84.104,
+            "end": 84.164,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저의",
+            "start": 84.184,
+            "end": 84.224,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "역량이",
+            "start": 84.245,
+            "end": 84.305,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "아니어서",
+            "start": 84.325,
+            "end": 84.405,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이거는",
+            "start": 84.425,
+            "end": 84.485,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "영업",
+            "start": 84.505,
+            "end": 84.545,
+            "score": 0.015,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "쪽에다가",
+            "start": 84.565,
+            "end": 84.645,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 85.385,
+        "end": 95.108,
+        "text": " 요청이 아니라 요청을 좀 해야 될 것 같아요 그리고 다행스러운 거는",
+        "words": [
+          {
+            "word": "요청이",
+            "start": 85.385,
+            "end": 93.802,
+            "score": 0.33,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "아니라",
+            "start": 93.822,
+            "end": 93.883,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "요청을",
+            "start": 93.903,
+            "end": 93.963,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좀",
+            "start": 93.983,
+            "end": 94.003,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "해야",
+            "start": 94.023,
+            "end": 94.063,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "될",
+            "start": 94.084,
+            "end": 94.104,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 94.124,
+            "end": 94.144,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같아요",
+            "start": 94.164,
+            "end": 94.224,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그리고",
+            "start": 94.244,
+            "end": 94.305,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "다행스러운",
+            "start": 94.325,
+            "end": 94.566,
+            "score": 0.467,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "거는",
+            "start": 95.068,
+            "end": 95.108,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 102.378,
+        "end": 128.993,
+        "text": " 국방 쪽 사업 중에서 온나라 데이터를 학습해가지고 AI 서비스를 도입하려는 사업이 예정이 되어 있거든요 근데 이게 언제 당장 될지는 모르겠어가지고 이제 약간 좀 회습존이긴 한데 기획에서는 저희가 이거를 붙잡아가지고 풀어가려고 할 거거든요 근데 이걸로 그냥 만족하기에는 어떻게 될지 모르니까 이거는 좀",
+        "words": [
+          {
+            "word": "국방",
+            "start": 102.378,
+            "end": 120.382,
+            "score": 0.479,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "쪽",
+            "start": 120.402,
+            "end": 120.422,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사업",
+            "start": 120.442,
+            "end": 120.482,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "중에서",
+            "start": 120.502,
+            "end": 125.829,
+            "score": 0.821,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "온나라",
+            "start": 125.849,
+            "end": 125.909,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "데이터를",
+            "start": 125.929,
+            "end": 126.009,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "학습해가지고",
+            "start": 126.029,
+            "end": 126.149,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "AI",
+            "start": 126.169,
+            "end": 126.249,
+            "score": 0.337,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "서비스를",
+            "start": 126.269,
+            "end": 126.35,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "도입하려는",
+            "start": 126.37,
+            "end": 126.47,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사업이",
+            "start": 126.49,
+            "end": 126.55,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "예정이",
+            "start": 126.57,
+            "end": 126.63,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "되어",
+            "start": 126.65,
+            "end": 126.69,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "있거든요",
+            "start": 126.71,
+            "end": 126.79,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "근데",
+            "start": 126.81,
+            "end": 126.85,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이게",
+            "start": 126.87,
+            "end": 126.91,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "언제",
+            "start": 126.93,
+            "end": 126.97,
+            "score": 0.016,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "당장",
+            "start": 126.99,
+            "end": 127.03,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "될지는",
+            "start": 127.05,
+            "end": 127.111,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "모르겠어가지고",
+            "start": 127.131,
+            "end": 127.271,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이제",
+            "start": 127.291,
+            "end": 127.331,
+            "score": 0.03,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "약간",
+            "start": 127.351,
+            "end": 127.391,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좀",
+            "start": 127.411,
+            "end": 127.431,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "회습존이긴",
+            "start": 127.451,
+            "end": 127.551,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "한데",
+            "start": 127.571,
+            "end": 127.611,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "기획에서는",
+            "start": 127.631,
+            "end": 127.731,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희가",
+            "start": 127.751,
+            "end": 127.811,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이거를",
+            "start": 127.831,
+            "end": 127.892,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "붙잡아가지고",
+            "start": 127.912,
+            "end": 128.032,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "풀어가려고",
+            "start": 128.052,
+            "end": 128.152,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "할",
+            "start": 128.172,
+            "end": 128.192,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "거거든요",
+            "start": 128.212,
+            "end": 128.292,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "근데",
+            "start": 128.312,
+            "end": 128.352,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이걸로",
+            "start": 128.372,
+            "end": 128.432,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그냥",
+            "start": 128.452,
+            "end": 128.492,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "만족하기에는",
+            "start": 128.512,
+            "end": 128.633,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "어떻게",
+            "start": 128.653,
+            "end": 128.713,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "될지",
+            "start": 128.733,
+            "end": 128.773,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "모르니까",
+            "start": 128.793,
+            "end": 128.873,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이거는",
+            "start": 128.893,
+            "end": 128.953,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좀",
+            "start": 128.973,
+            "end": 128.993,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 129.378,
+        "end": 146.315,
+        "text": " 아까 말씀드린 대로 영업이랑 얘기를 좀 해봐야 될 것 같습니다.",
+        "words": [
+          {
+            "word": "아까",
+            "start": 129.378,
+            "end": 145.653,
+            "score": 0.48,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "말씀드린",
+            "start": 145.673,
+            "end": 145.754,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "대로",
+            "start": 145.774,
+            "end": 145.814,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "영업이랑",
+            "start": 145.834,
+            "end": 145.914,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기를",
+            "start": 145.934,
+            "end": 145.994,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좀",
+            "start": 146.014,
+            "end": 146.034,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "해봐야",
+            "start": 146.054,
+            "end": 146.114,
+            "score": 0.018,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "될",
+            "start": 146.134,
+            "end": 146.154,
+            "score": 0.046,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 146.175,
+            "end": 146.195,
+            "score": 0.031,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같습니다.",
+            "start": 146.215,
+            "end": 146.315,
+            "score": 0.02,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 146.335,
+        "end": 148.72,
+        "text": "그리고 저희가 자영님이랑 지난주에 얘기를 나눴을 때 저희가 당장 프론트 개발자가 필요하고 배포할 때는 인프라 개발자가 필요하고 그리고 리액트 플러그인 사용 시에는 비용이 발생할 수 있는",
+        "words": [
+          {
+            "word": "그리고",
+            "start": 146.335,
+            "end": 146.395,
+            "score": 0.028,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희가",
+            "start": 146.415,
+            "end": 146.475,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "자영님이랑",
+            "start": 146.495,
+            "end": 146.595,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "지난주에",
+            "start": 146.615,
+            "end": 146.696,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기를",
+            "start": 146.716,
+            "end": 146.776,
+            "score": 0.018,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "나눴을",
+            "start": 146.796,
+            "end": 146.856,
+            "score": 0.028,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "때",
+            "start": 146.876,
+            "end": 146.896,
+            "score": 0.036,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희가",
+            "start": 146.916,
+            "end": 146.976,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "당장",
+            "start": 146.996,
+            "end": 147.036,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "프론트",
+            "start": 147.056,
+            "end": 147.117,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "개발자가",
+            "start": 147.137,
+            "end": 147.217,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "필요하고",
+            "start": 147.237,
+            "end": 147.317,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "배포할",
+            "start": 147.337,
+            "end": 147.397,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "때는",
+            "start": 147.417,
+            "end": 147.457,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "인프라",
+            "start": 147.477,
+            "end": 147.537,
+            "score": 0.022,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "개발자가",
+            "start": 147.558,
+            "end": 147.638,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "필요하고",
+            "start": 147.658,
+            "end": 147.738,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그리고",
+            "start": 147.758,
+            "end": 147.818,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "리액트",
+            "start": 147.838,
+            "end": 147.898,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "플러그인",
+            "start": 147.918,
+            "end": 147.998,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사용",
+            "start": 148.019,
+            "end": 148.059,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "시에는",
+            "start": 148.079,
+            "end": 148.139,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "비용이",
+            "start": 148.159,
+            "end": 148.219,
+            "score": 0.325,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "발생할",
+            "start": 148.379,
+            "end": 148.439,
+            "score": 0.265,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "수",
+            "start": 148.56,
+            "end": 148.6,
+            "score": 0.436,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "있는",
+            "start": 148.68,
+            "end": 148.72,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 153.745,
+        "end": 163.215,
+        "text": " 그런데 일단은 이거 프론트 개발자가 먼저 선행되어야지 확정이 될 수 있을 것 같아요.",
+        "words": [
+          {
+            "word": "그런데",
+            "start": 153.745,
+            "end": 154.205,
+            "score": 0.902,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "일단은",
+            "start": 154.266,
+            "end": 155.607,
+            "score": 0.622,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "이거",
+            "start": 155.627,
+            "end": 155.667,
+            "score": 0.013,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "프론트",
+            "start": 155.687,
+            "end": 155.747,
+            "score": 0.002,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "개발자가",
+            "start": 155.767,
+            "end": 162.654,
+            "score": 0.457,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "먼저",
+            "start": 162.674,
+            "end": 162.714,
+            "score": 0.004,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "선행되어야지",
+            "start": 162.734,
+            "end": 162.854,
+            "score": 0.001,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "확정이",
+            "start": 162.874,
+            "end": 162.934,
+            "score": 0.007,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "될",
+            "start": 162.954,
+            "end": 162.974,
+            "score": 0.017,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "수",
+            "start": 162.994,
+            "end": 163.014,
+            "score": 0.01,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "있을",
+            "start": 163.034,
+            "end": 163.074,
+            "score": 0.005,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "것",
+            "start": 163.094,
+            "end": 163.114,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "같아요.",
+            "start": 163.134,
+            "end": 163.215,
+            "score": 0.003,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 163.235,
+        "end": 163.475,
+        "text": "안 설 수도 있으니까.",
+        "words": [
+          {
+            "word": "안",
+            "start": 163.235,
+            "end": 163.255,
+            "score": 0.011
+          },
+          {
+            "word": "설",
+            "start": 163.275,
+            "end": 163.295,
+            "score": 0.011
+          },
+          {
+            "word": "수도",
+            "start": 163.315,
+            "end": 163.355,
+            "score": 0.003,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "있으니까.",
+            "start": 163.375,
+            "end": 163.475,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 163.495,
+        "end": 173.625,
+        "text": "그런데 비용 발생할 만한 요지 있는 포인트들이 몇 가지 있다고 주변에 있는 프론트 개발자한테 확인을 받긴 했어요.",
+        "words": [
+          {
+            "word": "그런데",
+            "start": 163.495,
+            "end": 163.555,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "비용",
+            "start": 163.575,
+            "end": 163.695,
+            "score": 0.998,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "발생할",
+            "start": 163.815,
+            "end": 164.416,
+            "score": 0.951,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "만한",
+            "start": 164.436,
+            "end": 164.616,
+            "score": 0.924,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "요지",
+            "start": 164.736,
+            "end": 165.377,
+            "score": 0.823,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "있는",
+            "start": 165.837,
+            "end": 165.877,
+            "score": 0.335,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "포인트들이",
+            "start": 172.764,
+            "end": 172.864,
+            "score": 0.002,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "몇",
+            "start": 172.884,
+            "end": 172.904,
+            "score": 0.015,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "가지",
+            "start": 172.924,
+            "end": 172.964,
+            "score": 0.002,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "있다고",
+            "start": 172.984,
+            "end": 173.044,
+            "score": 0.007,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "주변에",
+            "start": 173.064,
+            "end": 173.125,
+            "score": 0.001,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "있는",
+            "start": 173.145,
+            "end": 173.185,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "프론트",
+            "start": 173.205,
+            "end": 173.265,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "개발자한테",
+            "start": 173.285,
+            "end": 173.385,
+            "score": 0.005,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "확인을",
+            "start": 173.405,
+            "end": 173.465,
+            "score": 0.004,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "받긴",
+            "start": 173.485,
+            "end": 173.525,
+            "score": 0.001,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "했어요.",
+            "start": 173.545,
+            "end": 173.625,
+            "score": 0.162,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 173.645,
+        "end": 182.314,
+        "text": "그런데 신규로 투입되는 프론트엔드 개발자가 그거를 확정해주면 비용을 들이지 말지가 결정이 될 것 같아요.",
+        "words": [
+          {
+            "word": "그런데",
+            "start": 173.645,
+            "end": 173.705,
+            "score": 0.001,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "신규로",
+            "start": 173.725,
+            "end": 173.785,
+            "score": 0.002,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "투입되는",
+            "start": 173.805,
+            "end": 176.468,
+            "score": 0.381,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "프론트엔드",
+            "start": 176.488,
+            "end": 176.588,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "개발자가",
+            "start": 176.608,
+            "end": 176.688,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "그거를",
+            "start": 176.708,
+            "end": 177.729,
+            "score": 0.473,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "확정해주면",
+            "start": 178.69,
+            "end": 178.79,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "비용을",
+            "start": 178.81,
+            "end": 181.893,
+            "score": 0.628,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "들이지",
+            "start": 181.913,
+            "end": 181.973,
+            "score": 0.015,
+            "speaker": "SPEAKER_01"
+          },
+          {
+            "word": "말지가",
+            "start": 181.993,
+            "end": 182.054,
+            "score": 0.004,
+            "speaker": "SPEAKER_01"
+          },
+          {
+            "word": "결정이",
+            "start": 182.074,
+            "end": 182.134,
+            "score": 0.002,
+            "speaker": "SPEAKER_01"
+          },
+          {
+            "word": "될",
+            "start": 182.154,
+            "end": 182.174,
+            "score": 0.009,
+            "speaker": "SPEAKER_01"
+          },
+          {
+            "word": "것",
+            "start": 182.194,
+            "end": 182.214,
+            "score": 0.021,
+            "speaker": "SPEAKER_01"
+          },
+          {
+            "word": "같아요.",
+            "start": 182.234,
+            "end": 182.314,
+            "score": 0.029,
+            "speaker": "SPEAKER_01"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 182.334,
+        "end": 182.554,
+        "text": "비용이 혹시 얼마죠?",
+        "words": [
+          {
+            "word": "비용이",
+            "start": 182.334,
+            "end": 182.394,
+            "score": 0.036,
+            "speaker": "SPEAKER_01"
+          },
+          {
+            "word": "혹시",
+            "start": 182.414,
+            "end": 182.454,
+            "score": 0.074,
+            "speaker": "SPEAKER_01"
+          },
+          {
+            "word": "얼마죠?",
+            "start": 182.474,
+            "end": 182.554,
+            "score": 0.046,
+            "speaker": "SPEAKER_01"
+          }
+        ],
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "start": 185.572,
+        "end": 201.369,
+        "text": " 근데 이게 좀 여러 개가 붙으면 뭐 한 20만 원까지?",
+        "words": [
+          {
+            "word": "근데",
+            "start": 185.572,
+            "end": 186.533,
+            "score": 0.81,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "이게",
+            "start": 186.693,
+            "end": 187.034,
+            "score": 0.942,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "좀",
+            "start": 187.434,
+            "end": 187.554,
+            "score": 0.989,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "여러",
+            "start": 187.694,
+            "end": 188.055,
+            "score": 0.904,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "개가",
+            "start": 188.235,
+            "end": 188.275,
+            "score": 0.279,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "붙으면",
+            "start": 189.496,
+            "end": 189.556,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "뭐",
+            "start": 189.576,
+            "end": 189.596,
+            "score": 0.892,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "한",
+            "start": 189.777,
+            "end": 189.797,
+            "score": 0.004,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "20만",
+            "start": 189.817,
+            "end": 191.578,
+            "score": 0.883,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "원까지?",
+            "start": 200.889,
+            "end": 201.369,
+            "score": 0.548,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 201.389,
+        "end": 206.455,
+        "text": "그렇게 많이 붙지는 않을 것 같아요.",
+        "words": [
+          {
+            "word": "그렇게",
+            "start": 201.389,
+            "end": 201.449,
+            "score": 0.33,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "많이",
+            "start": 206.134,
+            "end": 206.174,
+            "score": 0.006
+          },
+          {
+            "word": "붙지는",
+            "start": 206.194,
+            "end": 206.254,
+            "score": 0.005
+          },
+          {
+            "word": "않을",
+            "start": 206.274,
+            "end": 206.314,
+            "score": 0
+          },
+          {
+            "word": "것",
+            "start": 206.334,
+            "end": 206.354,
+            "score": 0
+          },
+          {
+            "word": "같아요.",
+            "start": 206.374,
+            "end": 206.455,
+            "score": 0.003
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 206.475,
+        "end": 206.635,
+        "text": "솔직히 말해서.",
+        "words": [
+          {
+            "word": "솔직히",
+            "start": 206.475,
+            "end": 206.535,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "말해서.",
+            "start": 206.555,
+            "end": 206.635,
+            "score": 0.002,
+            "speaker": "SPEAKER_06"
+          }
+        ],
+        "speaker": "SPEAKER_06"
+      },
+      {
+        "start": 206.655,
+        "end": 207.476,
+        "text": "근데 이게 뭐 라이센스 단위로 저희가 비용을 지불해야 되거나 그런 걸까요?",
+        "words": [
+          {
+            "word": "근데",
+            "start": 206.655,
+            "end": 206.695,
+            "score": 0.01,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "이게",
+            "start": 206.715,
+            "end": 206.755,
+            "score": 0.001,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "뭐",
+            "start": 206.775,
+            "end": 206.795,
+            "score": 0.017,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "라이센스",
+            "start": 206.815,
+            "end": 206.895,
+            "score": 0.028,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "단위로",
+            "start": 206.915,
+            "end": 206.975,
+            "score": 0.005,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "저희가",
+            "start": 206.995,
+            "end": 207.055,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "비용을",
+            "start": 207.075,
+            "end": 207.135,
+            "score": 0.007,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "지불해야",
+            "start": 207.155,
+            "end": 207.235,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "되거나",
+            "start": 207.255,
+            "end": 207.315,
+            "score": 0.012,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "그런",
+            "start": 207.335,
+            "end": 207.376,
+            "score": 0.01,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "걸까요?",
+            "start": 207.396,
+            "end": 207.476,
+            "score": 0.007,
+            "speaker": "SPEAKER_06"
+          }
+        ],
+        "speaker": "SPEAKER_06"
+      },
+      {
+        "start": 207.496,
+        "end": 208.397,
+        "text": "그런 개념은 아닌 것 같은데 그래도 그 내용을 확인을 해보긴 해야 될 것 같아요.",
+        "words": [
+          {
+            "word": "그런",
+            "start": 207.496,
+            "end": 207.536,
+            "score": 0.026,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "개념은",
+            "start": 207.556,
+            "end": 207.616,
+            "score": 0.011,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "아닌",
+            "start": 207.636,
+            "end": 207.676,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "것",
+            "start": 207.696,
+            "end": 207.716,
+            "score": 0.053,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "같은데",
+            "start": 207.736,
+            "end": 207.796,
+            "score": 0.006,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "그래도",
+            "start": 207.816,
+            "end": 207.876,
+            "score": 0.001,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "그",
+            "start": 207.896,
+            "end": 207.916,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "내용을",
+            "start": 207.936,
+            "end": 207.996,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "확인을",
+            "start": 208.016,
+            "end": 208.076,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "해보긴",
+            "start": 208.096,
+            "end": 208.156,
+            "score": 0.001,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "해야",
+            "start": 208.176,
+            "end": 208.216,
+            "score": 0.006
+          },
+          {
+            "word": "될",
+            "start": 208.236,
+            "end": 208.256,
+            "score": 0.011
+          },
+          {
+            "word": "것",
+            "start": 208.276,
+            "end": 208.297,
+            "score": 0.015
+          },
+          {
+            "word": "같아요.",
+            "start": 208.317,
+            "end": 208.397,
+            "score": 0.009
+          }
+        ],
+        "speaker": "SPEAKER_06"
+      },
+      {
+        "start": 208.417,
+        "end": 208.597,
+        "text": "네, 알겠습니다.",
+        "words": [
+          {
+            "word": "네,",
+            "start": 208.417,
+            "end": 208.457,
+            "score": 0.01,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "알겠습니다.",
+            "start": 208.477,
+            "end": 208.597,
+            "score": 0.011,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 208.617,
+        "end": 209.057,
+        "text": "어떤 게 3만 원이라는 거예요?",
+        "words": [
+          {
+            "word": "어떤",
+            "start": 208.617,
+            "end": 208.657,
+            "score": 0.003,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "게",
+            "start": 208.677,
+            "end": 208.697,
+            "score": 0.004,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "3만",
+            "start": 208.717,
+            "end": 208.797,
+            "score": 0.333,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "원이라는",
+            "start": 208.817,
+            "end": 208.897,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "거예요?",
+            "start": 208.917,
+            "end": 209.057,
+            "score": 0.269,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 209.077,
+        "end": 212.962,
+        "text": "그 그래프 들어가는 부분이 있어요.",
+        "words": [
+          {
+            "word": "그",
+            "start": 209.077,
+            "end": 209.097,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "그래프",
+            "start": 209.117,
+            "end": 209.177,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "들어가는",
+            "start": 209.197,
+            "end": 212.781,
+            "score": 0.706,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "부분이",
+            "start": 212.801,
+            "end": 212.861,
+            "score": 0.01,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "있어요.",
+            "start": 212.881,
+            "end": 212.962,
+            "score": 0.01,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 212.982,
+        "end": 213.402,
+        "text": "이렇게 그 이상한, 아 이상한이 아니라",
+        "words": [
+          {
+            "word": "이렇게",
+            "start": 212.982,
+            "end": 213.042,
+            "score": 0.01,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "그",
+            "start": 213.062,
+            "end": 213.082,
+            "score": 0.011,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "이상한,",
+            "start": 213.102,
+            "end": 213.182,
+            "score": 0.004,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "아",
+            "start": 213.202,
+            "end": 213.222,
+            "score": 0.004,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "이상한이",
+            "start": 213.242,
+            "end": 213.322,
+            "score": 0.11,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "아니라",
+            "start": 213.342,
+            "end": 213.402,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 216.436,
+        "end": 236.976,
+        "text": " 차트 같은 거 그리고 저희 기획에서는 MVP 개발을 위해서 추가 기능에 대해서 기획을 진행할 예정인데 현재 너무 맨땅이 헤딩하는 방식인 것 같아서 시은님이랑 얘기를 해서 기존의 사업의 RFP를 참고해서",
+        "words": [
+          {
+            "word": "차트",
+            "start": 216.436,
+            "end": 234.772,
+            "score": 0.478,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같은",
+            "start": 234.792,
+            "end": 234.832,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "거",
+            "start": 234.852,
+            "end": 234.872,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그리고",
+            "start": 234.892,
+            "end": 234.952,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희",
+            "start": 234.972,
+            "end": 235.012,
+            "score": 0.014,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "기획에서는",
+            "start": 235.032,
+            "end": 235.132,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "MVP",
+            "start": 235.152,
+            "end": 235.213,
+            "score": 0.011,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "개발을",
+            "start": 235.233,
+            "end": 235.293,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "위해서",
+            "start": 235.313,
+            "end": 235.373,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "추가",
+            "start": 235.393,
+            "end": 235.433,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "기능에",
+            "start": 235.453,
+            "end": 235.513,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "대해서",
+            "start": 235.533,
+            "end": 235.593,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "기획을",
+            "start": 235.613,
+            "end": 235.673,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "진행할",
+            "start": 235.694,
+            "end": 235.754,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "예정인데",
+            "start": 235.774,
+            "end": 235.854,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "현재",
+            "start": 235.874,
+            "end": 235.914,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "너무",
+            "start": 235.934,
+            "end": 235.974,
+            "score": 0.014,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "맨땅이",
+            "start": 235.994,
+            "end": 236.054,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "헤딩하는",
+            "start": 236.074,
+            "end": 236.154,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "방식인",
+            "start": 236.174,
+            "end": 236.235,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 236.255,
+            "end": 236.275,
+            "score": 0.051,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같아서",
+            "start": 236.295,
+            "end": 236.355,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "시은님이랑",
+            "start": 236.375,
+            "end": 236.475,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기를",
+            "start": 236.495,
+            "end": 236.555,
+            "score": 0.011,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "해서",
+            "start": 236.575,
+            "end": 236.615,
+            "score": 0.014,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "기존의",
+            "start": 236.635,
+            "end": 236.695,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사업의",
+            "start": 236.716,
+            "end": 236.776,
+            "score": 0.03,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "RFP를",
+            "start": 236.796,
+            "end": 236.876,
+            "score": 0.341,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "참고해서",
+            "start": 236.896,
+            "end": 236.976,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 240.145,
+        "end": 264.193,
+        "text": " 그래서 이거를 하는 과정에서는 에이전트 개발 담당하시는 분들이랑 좀 얘기를 많이 나눠야 될 것 같습니다.",
+        "words": [
+          {
+            "word": "그래서",
+            "start": 240.145,
+            "end": 240.465,
+            "score": 0.609,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이거를",
+            "start": 240.606,
+            "end": 263.172,
+            "score": 0.321,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하는",
+            "start": 263.192,
+            "end": 263.232,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "과정에서는",
+            "start": 263.252,
+            "end": 263.352,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "에이전트",
+            "start": 263.372,
+            "end": 263.452,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "개발",
+            "start": 263.472,
+            "end": 263.512,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "담당하시는",
+            "start": 263.532,
+            "end": 263.632,
+            "score": 0.001
+          },
+          {
+            "word": "분들이랑",
+            "start": 263.652,
+            "end": 263.732,
+            "score": 0
+          },
+          {
+            "word": "좀",
+            "start": 263.752,
+            "end": 263.772,
+            "score": 0.005
+          },
+          {
+            "word": "얘기를",
+            "start": 263.792,
+            "end": 263.852,
+            "score": 0.003
+          },
+          {
+            "word": "많이",
+            "start": 263.873,
+            "end": 263.913,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "나눠야",
+            "start": 263.933,
+            "end": 263.993,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "될",
+            "start": 264.013,
+            "end": 264.033,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 264.053,
+            "end": 264.073,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같습니다.",
+            "start": 264.093,
+            "end": 264.193,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 264.213,
+        "end": 265.855,
+        "text": "그래서 일정은 어느 정도 정리되는 대로 공유를 드릴 예정이고 빠르면 금주 주말이라고 하면 목요일이나 금요일쯤에 일단 킥오프를 하지 않을까 싶습니다.",
+        "words": [
+          {
+            "word": "그래서",
+            "start": 264.213,
+            "end": 264.273,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "일정은",
+            "start": 264.293,
+            "end": 264.353,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "어느",
+            "start": 264.373,
+            "end": 264.413,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "정도",
+            "start": 264.433,
+            "end": 264.473,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "정리되는",
+            "start": 264.493,
+            "end": 264.573,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "대로",
+            "start": 264.593,
+            "end": 264.633,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "공유를",
+            "start": 264.653,
+            "end": 264.713,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "드릴",
+            "start": 264.734,
+            "end": 264.774,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "예정이고",
+            "start": 264.794,
+            "end": 264.874,
+            "score": 0
+          },
+          {
+            "word": "빠르면",
+            "start": 264.894,
+            "end": 264.954,
+            "score": 0
+          },
+          {
+            "word": "금주",
+            "start": 264.974,
+            "end": 265.014,
+            "score": 0
+          },
+          {
+            "word": "주말이라고",
+            "start": 265.034,
+            "end": 265.134,
+            "score": 0
+          },
+          {
+            "word": "하면",
+            "start": 265.154,
+            "end": 265.194,
+            "score": 0.002
+          },
+          {
+            "word": "목요일이나",
+            "start": 265.214,
+            "end": 265.314,
+            "score": 0
+          },
+          {
+            "word": "금요일쯤에",
+            "start": 265.334,
+            "end": 265.434,
+            "score": 0
+          },
+          {
+            "word": "일단",
+            "start": 265.454,
+            "end": 265.494,
+            "score": 0
+          },
+          {
+            "word": "킥오프를",
+            "start": 265.514,
+            "end": 265.595,
+            "score": 0
+          },
+          {
+            "word": "하지",
+            "start": 265.615,
+            "end": 265.655,
+            "score": 0
+          },
+          {
+            "word": "않을까",
+            "start": 265.675,
+            "end": 265.735,
+            "score": 0
+          },
+          {
+            "word": "싶습니다.",
+            "start": 265.755,
+            "end": 265.855,
+            "score": 0.001
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 265.875,
+        "end": 266.035,
+        "text": "저는 끝입니다.",
+        "words": [
+          {
+            "word": "저는",
+            "start": 265.875,
+            "end": 265.915,
+            "score": 0.001
+          },
+          {
+            "word": "끝입니다.",
+            "start": 265.935,
+            "end": 266.035,
+            "score": 0.001
+          }
+        ]
+      },
+      {
+        "start": 269.153,
+        "end": 285.046,
+        "text": " 저는 있는데 저는 용범 팀장님이랑 그 다음에 로아님이랑 얘기를 나눠봐야 되는 포인트들이 있을 것 같아요.",
+        "words": [
+          {
+            "word": "저는",
+            "start": 269.153,
+            "end": 281.819,
+            "score": 0.498,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "있는데",
+            "start": 281.839,
+            "end": 281.899,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "저는",
+            "start": 281.919,
+            "end": 281.959,
+            "score": 0.002,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "용범",
+            "start": 281.979,
+            "end": 282.019,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "팀장님이랑",
+            "start": 282.04,
+            "end": 282.14,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "그",
+            "start": 282.16,
+            "end": 282.18,
+            "score": 0.001,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "다음에",
+            "start": 282.2,
+            "end": 282.26,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "로아님이랑",
+            "start": 282.28,
+            "end": 282.38,
+            "score": 0.144,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "얘기를",
+            "start": 284.505,
+            "end": 284.565,
+            "score": 0.005
+          },
+          {
+            "word": "나눠봐야",
+            "start": 284.585,
+            "end": 284.665,
+            "score": 0
+          },
+          {
+            "word": "되는",
+            "start": 284.685,
+            "end": 284.725,
+            "score": 0.004
+          },
+          {
+            "word": "포인트들이",
+            "start": 284.745,
+            "end": 284.845,
+            "score": 0
+          },
+          {
+            "word": "있을",
+            "start": 284.865,
+            "end": 284.905,
+            "score": 0.002
+          },
+          {
+            "word": "것",
+            "start": 284.925,
+            "end": 284.946,
+            "score": 0.011
+          },
+          {
+            "word": "같아요.",
+            "start": 284.966,
+            "end": 285.046,
+            "score": 0.004
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 285.066,
+        "end": 290.297,
+        "text": "연동 관련해서랑 연동 규격 관련해서랑 그 다음에 파일 서버 어떻게 공유할지 약간 인프라적인 부분 이야기 나눠봐야 될 것 같아요.",
+        "words": [
+          {
+            "word": "연동",
+            "start": 285.066,
+            "end": 285.106,
+            "score": 0.002
+          },
+          {
+            "word": "관련해서랑",
+            "start": 285.126,
+            "end": 285.226,
+            "score": 0.001
+          },
+          {
+            "word": "연동",
+            "start": 285.246,
+            "end": 285.286,
+            "score": 0.005
+          },
+          {
+            "word": "규격",
+            "start": 285.306,
+            "end": 285.346,
+            "score": 0.002,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "관련해서랑",
+            "start": 285.366,
+            "end": 285.467,
+            "score": 0.002,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "그",
+            "start": 285.487,
+            "end": 285.507,
+            "score": 0.038,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "다음에",
+            "start": 285.527,
+            "end": 285.587,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "파일",
+            "start": 285.607,
+            "end": 285.647,
+            "score": 0.002,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "서버",
+            "start": 285.667,
+            "end": 285.707,
+            "score": 0.01,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "어떻게",
+            "start": 285.727,
+            "end": 285.787,
+            "score": 0.004,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "공유할지",
+            "start": 285.807,
+            "end": 285.887,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "약간",
+            "start": 285.908,
+            "end": 285.948,
+            "score": 0,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "인프라적인",
+            "start": 285.968,
+            "end": 287.511,
+            "score": 0.401,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "부분",
+            "start": 287.531,
+            "end": 287.571,
+            "score": 0.03,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "이야기",
+            "start": 287.591,
+            "end": 289.956,
+            "score": 0.494,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "나눠봐야",
+            "start": 289.976,
+            "end": 290.056,
+            "score": 0.094,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "될",
+            "start": 290.076,
+            "end": 290.096,
+            "score": 0.202,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "것",
+            "start": 290.116,
+            "end": 290.136,
+            "score": 0.007,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "같아요.",
+            "start": 290.156,
+            "end": 290.297,
+            "score": 0.342,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 290.437,
+        "end": 290.537,
+        "text": "끝입니다.",
+        "words": [
+          {
+            "word": "끝입니다.",
+            "start": 290.437,
+            "end": 290.537,
+            "score": 0.029,
+            "speaker": "SPEAKER_03"
+          }
+        ],
+        "speaker": "SPEAKER_03"
+      },
+      {
+        "start": 291.395,
+        "end": 310.065,
+        "text": " 아 제가 말씀드리다 까먹은 게 있는데 사실 정의를 저희 내부적으로는 좀 다르게 해야 될 것 같아요.",
+        "words": [
+          {
+            "word": "아",
+            "start": 291.395,
+            "end": 308.984,
+            "score": 0.939,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "제가",
+            "start": 309.004,
+            "end": 309.044,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "말씀드리다",
+            "start": 309.064,
+            "end": 309.164,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "까먹은",
+            "start": 309.184,
+            "end": 309.244,
+            "score": 0.031,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "게",
+            "start": 309.264,
+            "end": 309.284,
+            "score": 0.17,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "있는데",
+            "start": 309.304,
+            "end": 309.364,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사실",
+            "start": 309.384,
+            "end": 309.424,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "정의를",
+            "start": 309.444,
+            "end": 309.504,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희",
+            "start": 309.525,
+            "end": 309.565,
+            "score": 0.02,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "내부적으로는",
+            "start": 309.585,
+            "end": 309.705,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좀",
+            "start": 309.725,
+            "end": 309.745,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "다르게",
+            "start": 309.765,
+            "end": 309.825,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "해야",
+            "start": 309.845,
+            "end": 309.885,
+            "score": 0.016,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "될",
+            "start": 309.905,
+            "end": 309.925,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 309.945,
+            "end": 309.965,
+            "score": 0.008,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같아요.",
+            "start": 309.985,
+            "end": 310.065,
+            "score": 0.01,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 310.085,
+        "end": 312.189,
+        "text": "기존에 프로토타입이라고 얘기를 했었던 거를 저희가 시안 화면이라고 그냥 얘기를 하고 진행을 하고 그리고 사실 MVP 단계로 저희가 정의했었던 거를 프로토타입으로 하는 게 맞는 것 같습니다.",
+        "words": [
+          {
+            "word": "기존에",
+            "start": 310.085,
+            "end": 310.146,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "프로토타입이라고",
+            "start": 310.166,
+            "end": 310.326,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기를",
+            "start": 310.346,
+            "end": 310.406,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "했었던",
+            "start": 310.426,
+            "end": 310.486,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "거를",
+            "start": 310.506,
+            "end": 310.546,
+            "score": 0.012,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희가",
+            "start": 310.566,
+            "end": 310.626,
+            "score": 0.01,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "시안",
+            "start": 310.646,
+            "end": 310.686,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "화면이라고",
+            "start": 310.706,
+            "end": 310.807,
+            "score": 0.012,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그냥",
+            "start": 310.827,
+            "end": 310.867,
+            "score": 0.003,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기를",
+            "start": 310.887,
+            "end": 310.947,
+            "score": 0.022,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하고",
+            "start": 310.967,
+            "end": 311.007,
+            "score": 0.012,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "진행을",
+            "start": 311.027,
+            "end": 311.087,
+            "score": 0.01,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하고",
+            "start": 311.107,
+            "end": 311.147,
+            "score": 0.013,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그리고",
+            "start": 311.167,
+            "end": 311.227,
+            "score": 0.023,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사실",
+            "start": 311.247,
+            "end": 311.287,
+            "score": 0.005,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "MVP",
+            "start": 311.307,
+            "end": 311.368,
+            "score": 0.026,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "단계로",
+            "start": 311.388,
+            "end": 311.448,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희가",
+            "start": 311.468,
+            "end": 311.528,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "정의했었던",
+            "start": 311.548,
+            "end": 311.648,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "거를",
+            "start": 311.668,
+            "end": 311.708,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "프로토타입으로",
+            "start": 311.728,
+            "end": 311.868,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하는",
+            "start": 311.888,
+            "end": 311.928,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "게",
+            "start": 311.948,
+            "end": 311.969,
+            "score": 0.015,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "맞는",
+            "start": 311.989,
+            "end": 312.029,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 312.049,
+            "end": 312.069,
+            "score": 0.013,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같습니다.",
+            "start": 312.089,
+            "end": 312.189,
+            "score": 0.014,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 312.209,
+        "end": 312.289,
+        "text": "정의상.",
+        "words": [
+          {
+            "word": "정의상.",
+            "start": 312.209,
+            "end": 312.289,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 316.403,
+        "end": 343.768,
+        "text": " 외부적으로 얘기를 할 때는 사실 저희가 MVP를 개발한다고 해서 그 제품을 바로 어디에다 서비스를 하는 것도 아니고 바로 어디에 납품을 하는 것도 아니기 때문에 사실 저희 내부적인 일정일 뿐이지 여기에 뭐가 크게 좌지우지 되는 건 아닐 것 같거든요.",
+        "words": [
+          {
+            "word": "외부적으로",
+            "start": 316.403,
+            "end": 318.725,
+            "score": 0.191,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "얘기를",
+            "start": 318.745,
+            "end": 318.805,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "할",
+            "start": 318.825,
+            "end": 318.845,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "때는",
+            "start": 318.865,
+            "end": 318.905,
+            "score": 0.496,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사실",
+            "start": 318.985,
+            "end": 319.206,
+            "score": 0.974,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희가",
+            "start": 319.466,
+            "end": 327.933,
+            "score": 0.578,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "MVP를",
+            "start": 327.953,
+            "end": 341.506,
+            "score": 0.688,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "개발한다고",
+            "start": 341.526,
+            "end": 341.626,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "해서",
+            "start": 341.646,
+            "end": 341.686,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그",
+            "start": 341.706,
+            "end": 341.726,
+            "score": 0.024,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "제품을",
+            "start": 341.746,
+            "end": 341.806,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "바로",
+            "start": 341.826,
+            "end": 341.866,
+            "score": 0.066,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "어디에다",
+            "start": 341.886,
+            "end": 341.966,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "서비스를",
+            "start": 341.986,
+            "end": 342.066,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하는",
+            "start": 342.086,
+            "end": 342.126,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것도",
+            "start": 342.146,
+            "end": 342.186,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "아니고",
+            "start": 342.206,
+            "end": 342.266,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "바로",
+            "start": 342.286,
+            "end": 342.326,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "어디에",
+            "start": 342.346,
+            "end": 342.406,
+            "score": 0.015,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "납품을",
+            "start": 342.426,
+            "end": 342.487,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하는",
+            "start": 342.507,
+            "end": 342.547,
+            "score": 0.009,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것도",
+            "start": 342.567,
+            "end": 342.607,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "아니기",
+            "start": 342.627,
+            "end": 342.687,
+            "score": 0.008,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "때문에",
+            "start": 342.707,
+            "end": 342.767,
+            "score": 0.004,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사실",
+            "start": 342.787,
+            "end": 342.827,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희",
+            "start": 342.847,
+            "end": 342.887,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "내부적인",
+            "start": 342.907,
+            "end": 342.987,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "일정일",
+            "start": 343.007,
+            "end": 343.067,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "뿐이지",
+            "start": 343.087,
+            "end": 343.147,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "여기에",
+            "start": 343.167,
+            "end": 343.227,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "뭐가",
+            "start": 343.247,
+            "end": 343.287,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "크게",
+            "start": 343.307,
+            "end": 343.347,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좌지우지",
+            "start": 343.367,
+            "end": 343.447,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "되는",
+            "start": 343.467,
+            "end": 343.507,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "건",
+            "start": 343.527,
+            "end": 343.548,
+            "score": 0.04,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "아닐",
+            "start": 343.568,
+            "end": 343.608,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 343.628,
+            "end": 343.648,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같거든요.",
+            "start": 343.668,
+            "end": 343.768,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 343.788,
+        "end": 345.229,
+        "text": "근데 사업은 분명히 나올 거고 국방부에서 진행하는 것처럼 그걸 위해서 저희가 내부적으로 컨센서스를 맞춰놓고 진행을 하다 보면은",
+        "words": [
+          {
+            "word": "근데",
+            "start": 343.788,
+            "end": 343.828,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "사업은",
+            "start": 343.848,
+            "end": 343.908,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "분명히",
+            "start": 343.928,
+            "end": 343.988,
+            "score": 0.016,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "나올",
+            "start": 344.008,
+            "end": 344.048,
+            "score": 0.008,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "거고",
+            "start": 344.068,
+            "end": 344.108,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "국방부에서",
+            "start": 344.128,
+            "end": 344.228,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "진행하는",
+            "start": 344.248,
+            "end": 344.328,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것처럼",
+            "start": 344.348,
+            "end": 344.408,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그걸",
+            "start": 344.428,
+            "end": 344.468,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "위해서",
+            "start": 344.488,
+            "end": 344.548,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "저희가",
+            "start": 344.568,
+            "end": 344.628,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "내부적으로",
+            "start": 344.648,
+            "end": 344.749,
+            "score": 0.011,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "컨센서스를",
+            "start": 344.769,
+            "end": 344.869,
+            "score": 0.117,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "맞춰놓고",
+            "start": 344.889,
+            "end": 344.969,
+            "score": 0.145,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "진행을",
+            "start": 344.989,
+            "end": 345.049,
+            "score": 0.256,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하다",
+            "start": 345.069,
+            "end": 345.109,
+            "score": 0.494,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "보면은",
+            "start": 345.169,
+            "end": 345.229,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 345.563,
+        "end": 360.381,
+        "text": " 좀 좋지 않을까라는 게 제 개인적인 의견입니다.",
+        "words": [
+          {
+            "word": "좀",
+            "start": 345.563,
+            "end": 359.88,
+            "score": 0.995,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좋지",
+            "start": 359.9,
+            "end": 359.94,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "않을까라는",
+            "start": 359.96,
+            "end": 360.061,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "게",
+            "start": 360.081,
+            "end": 360.101,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "제",
+            "start": 360.121,
+            "end": 360.141,
+            "score": 0.036,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "개인적인",
+            "start": 360.161,
+            "end": 360.241,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "의견입니다.",
+            "start": 360.261,
+            "end": 360.381,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 360.402,
+        "end": 360.602,
+        "text": "저 음성 쪽은 지금",
+        "words": [
+          {
+            "word": "저",
+            "start": 360.402,
+            "end": 360.422,
+            "score": 0.035,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "음성",
+            "start": 360.442,
+            "end": 360.482,
+            "score": 0.008,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "쪽은",
+            "start": 360.502,
+            "end": 360.542,
+            "score": 0.031,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "지금",
+            "start": 360.562,
+            "end": 360.602,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 382.655,
+        "end": 408.281,
+        "text": " 화자별 사원들의 음성이 있어야 돼요.",
+        "words": [
+          {
+            "word": "화자별",
+            "start": 382.655,
+            "end": 407.941,
+            "score": 0.327,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "사원들의",
+            "start": 407.961,
+            "end": 408.041,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "음성이",
+            "start": 408.061,
+            "end": 408.121,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "있어야",
+            "start": 408.141,
+            "end": 408.201,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "돼요.",
+            "start": 408.221,
+            "end": 408.281,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 408.301,
+        "end": 411.805,
+        "text": "근데 여기서 이제 음성으로 80% 정도 아까 스피커 원투쓰리포 그게 맞았다면 여기서 음성 분리를 못했던 사람들한테 다시 이제 화자 분리로 80% 정도 맞았던 사람들이 분리가 되고 그리고 그 중에서도 없는 사람들은 진짜 없는 사람이다 라고 분리를 하게 됐는데 이제 화자 분리 모델의 성능이 좀 많이 안 좋은 편이죠.",
+        "words": [
+          {
+            "word": "근데",
+            "start": 408.301,
+            "end": 408.341,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "여기서",
+            "start": 408.361,
+            "end": 408.421,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "이제",
+            "start": 408.441,
+            "end": 408.481,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "음성으로",
+            "start": 408.501,
+            "end": 408.581,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "80%",
+            "start": 408.601,
+            "end": 408.662,
+            "score": 0.008,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "정도",
+            "start": 408.682,
+            "end": 408.722,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "아까",
+            "start": 408.742,
+            "end": 408.782,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "스피커",
+            "start": 408.802,
+            "end": 408.862,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "원투쓰리포",
+            "start": 408.882,
+            "end": 408.982,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "그게",
+            "start": 409.002,
+            "end": 409.042,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "맞았다면",
+            "start": 409.062,
+            "end": 409.142,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "여기서",
+            "start": 409.162,
+            "end": 409.222,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "음성",
+            "start": 409.242,
+            "end": 409.282,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "분리를",
+            "start": 409.302,
+            "end": 409.362,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "못했던",
+            "start": 409.382,
+            "end": 409.442,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "사람들한테",
+            "start": 409.462,
+            "end": 409.562,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "다시",
+            "start": 409.582,
+            "end": 409.622,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "이제",
+            "start": 409.643,
+            "end": 409.683,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "화자",
+            "start": 409.703,
+            "end": 409.743,
+            "score": 0.008,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "분리로",
+            "start": 409.763,
+            "end": 409.823,
+            "score": 0.017,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "80%",
+            "start": 409.843,
+            "end": 409.903,
+            "score": 0.009,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "정도",
+            "start": 409.923,
+            "end": 409.963,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "맞았던",
+            "start": 409.983,
+            "end": 410.043,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "사람들이",
+            "start": 410.063,
+            "end": 410.143,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "분리가",
+            "start": 410.163,
+            "end": 410.223,
+            "score": 0.007,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "되고",
+            "start": 410.243,
+            "end": 410.283,
+            "score": 0.01,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "그리고",
+            "start": 410.303,
+            "end": 410.363,
+            "score": 0
+          },
+          {
+            "word": "그",
+            "start": 410.383,
+            "end": 410.403,
+            "score": 0.02
+          },
+          {
+            "word": "중에서도",
+            "start": 410.423,
+            "end": 410.503,
+            "score": 0.003
+          },
+          {
+            "word": "없는",
+            "start": 410.523,
+            "end": 410.563,
+            "score": 0
+          },
+          {
+            "word": "사람들은",
+            "start": 410.583,
+            "end": 410.664,
+            "score": 0.002
+          },
+          {
+            "word": "진짜",
+            "start": 410.684,
+            "end": 410.724,
+            "score": 0
+          },
+          {
+            "word": "없는",
+            "start": 410.744,
+            "end": 410.784,
+            "score": 0.003
+          },
+          {
+            "word": "사람이다",
+            "start": 410.804,
+            "end": 410.884,
+            "score": 0.002
+          },
+          {
+            "word": "라고",
+            "start": 410.904,
+            "end": 410.944,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "분리를",
+            "start": 410.964,
+            "end": 411.024,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "하게",
+            "start": 411.044,
+            "end": 411.084,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "됐는데",
+            "start": 411.104,
+            "end": 411.164,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "이제",
+            "start": 411.184,
+            "end": 411.224,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "화자",
+            "start": 411.244,
+            "end": 411.284,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "분리",
+            "start": 411.304,
+            "end": 411.344,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "모델의",
+            "start": 411.364,
+            "end": 411.424,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "성능이",
+            "start": 411.444,
+            "end": 411.504,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "좀",
+            "start": 411.524,
+            "end": 411.544,
+            "score": 0.025,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "많이",
+            "start": 411.564,
+            "end": 411.605,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "안",
+            "start": 411.625,
+            "end": 411.645,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "좋은",
+            "start": 411.665,
+            "end": 411.705,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "편이죠.",
+            "start": 411.725,
+            "end": 411.805,
+            "score": 0.009,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 411.825,
+        "end": 412.105,
+        "text": "화자 식별도 문제가 있지만",
+        "words": [
+          {
+            "word": "화자",
+            "start": 411.825,
+            "end": 411.865,
+            "score": 0.02,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "식별도",
+            "start": 411.885,
+            "end": 411.945,
+            "score": 0.029,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "문제가",
+            "start": 411.965,
+            "end": 412.025,
+            "score": 0.01,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "있지만",
+            "start": 412.045,
+            "end": 412.105,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 416.725,
+        "end": 438.772,
+        "text": " 교체하거나 뭐 이런 식으로 해볼 생각입니다.",
+        "words": [
+          {
+            "word": "교체하거나",
+            "start": 416.725,
+            "end": 438.391,
+            "score": 0.199,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "뭐",
+            "start": 438.411,
+            "end": 438.431,
+            "score": 0.018,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "이런",
+            "start": 438.451,
+            "end": 438.492,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "식으로",
+            "start": 438.512,
+            "end": 438.572,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "해볼",
+            "start": 438.592,
+            "end": 438.632,
+            "score": 0.008,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "생각입니다.",
+            "start": 438.652,
+            "end": 438.772,
+            "score": 0.007,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 438.792,
+        "end": 439.092,
+        "text": "개선이 되고는 있는 건가요?",
+        "words": [
+          {
+            "word": "개선이",
+            "start": 438.792,
+            "end": 438.852,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "되고는",
+            "start": 438.872,
+            "end": 438.932,
+            "score": 0.01,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "있는",
+            "start": 438.952,
+            "end": 438.992,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "건가요?",
+            "start": 439.012,
+            "end": 439.092,
+            "score": 0.007,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 439.112,
+        "end": 439.152,
+        "text": "네.",
+        "words": [
+          {
+            "word": "네.",
+            "start": 439.112,
+            "end": 439.152,
+            "score": 0.017,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 439.172,
+        "end": 439.252,
+        "text": "조금씩.",
+        "words": [
+          {
+            "word": "조금씩.",
+            "start": 439.172,
+            "end": 439.252,
+            "score": 0.005,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 439.272,
+        "end": 439.393,
+        "text": "한 1%씩.",
+        "words": [
+          {
+            "word": "한",
+            "start": 439.272,
+            "end": 439.293,
+            "score": 0.012,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "1%씩.",
+            "start": 439.313,
+            "end": 439.393,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 439.413,
+        "end": 440.694,
+        "text": "그러면은 저희가 생각해야 되는 방식이 약간 그 화자의 목소리를 수집을 해놔야 되는 운직을 생각을 해야 되는 걸까요?",
+        "words": [
+          {
+            "word": "그러면은",
+            "start": 439.413,
+            "end": 439.493,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "저희가",
+            "start": 439.513,
+            "end": 439.573,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "생각해야",
+            "start": 439.593,
+            "end": 439.673,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "되는",
+            "start": 439.693,
+            "end": 439.733,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "방식이",
+            "start": 439.753,
+            "end": 439.813,
+            "score": 0.009,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "약간",
+            "start": 439.833,
+            "end": 439.873,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "그",
+            "start": 439.893,
+            "end": 439.913,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "화자의",
+            "start": 439.933,
+            "end": 439.993,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "목소리를",
+            "start": 440.013,
+            "end": 440.093,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "수집을",
+            "start": 440.114,
+            "end": 440.174,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "해놔야",
+            "start": 440.194,
+            "end": 440.254,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "되는",
+            "start": 440.274,
+            "end": 440.314,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "운직을",
+            "start": 440.334,
+            "end": 440.394,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "생각을",
+            "start": 440.414,
+            "end": 440.474,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "해야",
+            "start": 440.494,
+            "end": 440.534,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "되는",
+            "start": 440.554,
+            "end": 440.594,
+            "score": 0.01,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "걸까요?",
+            "start": 440.614,
+            "end": 440.694,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 440.714,
+        "end": 441.756,
+        "text": "화자의 목소리도 있어야 되고 새로 들어오는 사람들이 있으니까 지금 화자 분류도 넣는 거거든요.",
+        "words": [
+          {
+            "word": "화자의",
+            "start": 440.714,
+            "end": 440.774,
+            "score": 0.005,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "목소리도",
+            "start": 440.794,
+            "end": 440.874,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "있어야",
+            "start": 440.894,
+            "end": 440.955,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "되고",
+            "start": 440.975,
+            "end": 441.015,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "새로",
+            "start": 441.035,
+            "end": 441.075,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "들어오는",
+            "start": 441.095,
+            "end": 441.175,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "사람들이",
+            "start": 441.195,
+            "end": 441.275,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "있으니까",
+            "start": 441.295,
+            "end": 441.375,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "지금",
+            "start": 441.395,
+            "end": 441.435,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "화자",
+            "start": 441.455,
+            "end": 441.495,
+            "score": 0.011,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "분류도",
+            "start": 441.515,
+            "end": 441.575,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "넣는",
+            "start": 441.595,
+            "end": 441.635,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "거거든요.",
+            "start": 441.655,
+            "end": 441.756,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 441.776,
+        "end": 442.176,
+        "text": "화자 분류가 성능이 많이 안 좋아요.",
+        "words": [
+          {
+            "word": "화자",
+            "start": 441.776,
+            "end": 441.816,
+            "score": 0.018,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "분류가",
+            "start": 441.836,
+            "end": 441.896,
+            "score": 0.011,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "성능이",
+            "start": 441.916,
+            "end": 441.976,
+            "score": 0.01,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "많이",
+            "start": 441.996,
+            "end": 442.036,
+            "score": 0.014,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "안",
+            "start": 442.056,
+            "end": 442.076,
+            "score": 0.169,
+            "speaker": "SPEAKER_01"
+          },
+          {
+            "word": "좋아요.",
+            "start": 442.096,
+            "end": 442.176,
+            "score": 0.068,
+            "speaker": "SPEAKER_01"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 456.938,
+        "end": 478.826,
+        "text": " 음성 데이터는?",
+        "words": [
+          {
+            "word": "음성",
+            "start": 456.938,
+            "end": 465.008,
+            "score": 0.485,
+            "speaker": "SPEAKER_03"
+          },
+          {
+            "word": "데이터는?",
+            "start": 465.028,
+            "end": 478.826,
+            "score": 0.34,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 478.846,
+        "end": 481.95,
+        "text": "일단 저 들어오고 나서 모든 애를 다 녹음하긴 했는데 긴 거랑 짧은 거 다 그게 다 필요하진 않고 화자별로 자기가 짧게 녹음한 거 하는 파일만 있으면 되고 지금 저희가 긴 파일은 테스트해 보려고 쓰는 거예요 그래서 많이는 필요 없지만 일단 녹음본은 가지고 있었으면 감사하겠습니다",
+        "words": [
+          {
+            "word": "일단",
+            "start": 478.846,
+            "end": 478.886,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "저",
+            "start": 478.906,
+            "end": 478.926,
+            "score": 0.019,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "들어오고",
+            "start": 478.946,
+            "end": 479.026,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "나서",
+            "start": 479.046,
+            "end": 479.086,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "모든",
+            "start": 479.106,
+            "end": 479.146,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "애를",
+            "start": 479.166,
+            "end": 479.207,
+            "score": 0.009,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "다",
+            "start": 479.227,
+            "end": 479.247,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "녹음하긴",
+            "start": 479.267,
+            "end": 479.347,
+            "score": 0.007,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "했는데",
+            "start": 479.367,
+            "end": 479.427,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "긴",
+            "start": 479.447,
+            "end": 479.467,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "거랑",
+            "start": 479.487,
+            "end": 479.527,
+            "score": 0.007,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "짧은",
+            "start": 479.547,
+            "end": 479.587,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "거",
+            "start": 479.607,
+            "end": 479.627,
+            "score": 0.01,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "다",
+            "start": 479.647,
+            "end": 479.667,
+            "score": 0.017,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "그게",
+            "start": 479.687,
+            "end": 479.727,
+            "score": 0.002,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "다",
+            "start": 479.747,
+            "end": 479.767,
+            "score": 0.012,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "필요하진",
+            "start": 479.787,
+            "end": 479.867,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "않고",
+            "start": 479.887,
+            "end": 479.927,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "화자별로",
+            "start": 479.947,
+            "end": 480.028,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "자기가",
+            "start": 480.048,
+            "end": 480.108,
+            "score": 0.008,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "짧게",
+            "start": 480.128,
+            "end": 480.168,
+            "score": 0.008,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "녹음한",
+            "start": 480.188,
+            "end": 480.248,
+            "score": 0.007,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "거",
+            "start": 480.268,
+            "end": 480.288,
+            "score": 0.015,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "하는",
+            "start": 480.308,
+            "end": 480.348,
+            "score": 0,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "파일만",
+            "start": 480.368,
+            "end": 480.428,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "있으면",
+            "start": 480.448,
+            "end": 480.508,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "되고",
+            "start": 480.528,
+            "end": 480.568,
+            "score": 0.015,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "지금",
+            "start": 480.588,
+            "end": 480.628,
+            "score": 0.007,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "저희가",
+            "start": 480.648,
+            "end": 480.708,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "긴",
+            "start": 480.728,
+            "end": 480.748,
+            "score": 0.015,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "파일은",
+            "start": 480.769,
+            "end": 480.829,
+            "score": 0.005,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "테스트해",
+            "start": 480.849,
+            "end": 480.929,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "보려고",
+            "start": 480.949,
+            "end": 481.009,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "쓰는",
+            "start": 481.029,
+            "end": 481.069,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "거예요",
+            "start": 481.089,
+            "end": 481.149,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "그래서",
+            "start": 481.169,
+            "end": 481.229,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "많이는",
+            "start": 481.249,
+            "end": 481.309,
+            "score": 0.006,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "필요",
+            "start": 481.329,
+            "end": 481.369,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "없지만",
+            "start": 481.389,
+            "end": 481.449,
+            "score": 0.009,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "일단",
+            "start": 481.469,
+            "end": 481.509,
+            "score": 0.003,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "녹음본은",
+            "start": 481.529,
+            "end": 481.61,
+            "score": 0.007,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "가지고",
+            "start": 481.63,
+            "end": 481.69,
+            "score": 0.004,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "있었으면",
+            "start": 481.71,
+            "end": 481.79,
+            "score": 0.009,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "감사하겠습니다",
+            "start": 481.81,
+            "end": 481.95,
+            "score": 0.001,
+            "speaker": "SPEAKER_02"
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 482.082,
+        "end": 504.647,
+        "text": " 그러면 일단 저 60번짜리 하나 드리고 근데 60분은 저희가 정답 파일 만들기가 좀 빡세가지고 오늘 회의를 기준으로 하면 좋겠거든요 그래서 다른 분들하고 대화 한 번씩 짧게라도 말 한마디씩만 해주시면 감사하겠습니다 에이전트 지금 진행중인데",
+        "words": [
+          {
+            "word": "그러면",
+            "start": 482.082,
+            "end": 500.683,
+            "score": 0.326,
+            "speaker": "SPEAKER_02"
+          },
+          {
+            "word": "일단",
+            "start": 500.703,
+            "end": 500.743,
+            "score": 0.002
+          },
+          {
+            "word": "저",
+            "start": 500.763,
+            "end": 500.783,
+            "score": 0.004
+          },
+          {
+            "word": "60번짜리",
+            "start": 500.803,
+            "end": 500.903,
+            "score": 0.002
+          },
+          {
+            "word": "하나",
+            "start": 500.923,
+            "end": 500.963,
+            "score": 0
+          },
+          {
+            "word": "드리고",
+            "start": 500.983,
+            "end": 501.043,
+            "score": 0.001
+          },
+          {
+            "word": "근데",
+            "start": 501.063,
+            "end": 501.103,
+            "score": 0.002
+          },
+          {
+            "word": "60분은",
+            "start": 501.123,
+            "end": 501.203,
+            "score": 0.001
+          },
+          {
+            "word": "저희가",
+            "start": 501.223,
+            "end": 501.283,
+            "score": 0.001
+          },
+          {
+            "word": "정답",
+            "start": 501.303,
+            "end": 501.343,
+            "score": 0
+          },
+          {
+            "word": "파일",
+            "start": 501.363,
+            "end": 501.403,
+            "score": 0.001
+          },
+          {
+            "word": "만들기가",
+            "start": 501.423,
+            "end": 501.504,
+            "score": 0.001
+          },
+          {
+            "word": "좀",
+            "start": 501.524,
+            "end": 501.544,
+            "score": 0.003,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "빡세가지고",
+            "start": 501.564,
+            "end": 501.664,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "오늘",
+            "start": 501.684,
+            "end": 501.724,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "회의를",
+            "start": 501.744,
+            "end": 501.804,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "기준으로",
+            "start": 501.824,
+            "end": 501.904,
+            "score": 0.178,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "하면",
+            "start": 502.064,
+            "end": 502.104,
+            "score": 0.002,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "좋겠거든요",
+            "start": 502.124,
+            "end": 502.224,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "그래서",
+            "start": 502.244,
+            "end": 502.304,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "다른",
+            "start": 502.324,
+            "end": 502.364,
+            "score": 0.472,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "분들하고",
+            "start": 502.505,
+            "end": 502.585,
+            "score": 0.249,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "대화",
+            "start": 502.785,
+            "end": 502.825,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "한",
+            "start": 502.845,
+            "end": 502.865,
+            "score": 0.957,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "번씩",
+            "start": 503.806,
+            "end": 503.846,
+            "score": 0.006,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "짧게라도",
+            "start": 503.866,
+            "end": 503.946,
+            "score": 0.008,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "말",
+            "start": 503.966,
+            "end": 503.986,
+            "score": 0.03,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "한마디씩만",
+            "start": 504.006,
+            "end": 504.106,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "해주시면",
+            "start": 504.126,
+            "end": 504.207,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "감사하겠습니다",
+            "start": 504.227,
+            "end": 504.367,
+            "score": 0.011,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "에이전트",
+            "start": 504.387,
+            "end": 504.467,
+            "score": 0.017,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "지금",
+            "start": 504.487,
+            "end": 504.527,
+            "score": 0.054
+          },
+          {
+            "word": "진행중인데",
+            "start": 504.547,
+            "end": 504.647,
+            "score": 0.002
+          }
+        ],
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "start": 505.943,
+        "end": 513.811,
+        "text": " 툴을 만들어야 되는데 어떻게 진행할지 이거는 조금 상의를 해봐야 될 것 같아요.",
+        "words": [
+          {
+            "word": "툴을",
+            "start": 505.943,
+            "end": 506.283,
+            "score": 0.914,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "만들어야",
+            "start": 506.363,
+            "end": 506.944,
+            "score": 0.686,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "되는데",
+            "start": 506.964,
+            "end": 507.284,
+            "score": 0.941,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "어떻게",
+            "start": 507.765,
+            "end": 507.825,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "진행할지",
+            "start": 507.845,
+            "end": 508.185,
+            "score": 0.667,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "이거는",
+            "start": 513.35,
+            "end": 513.41,
+            "score": 0.001
+          },
+          {
+            "word": "조금",
+            "start": 513.43,
+            "end": 513.47,
+            "score": 0.004
+          },
+          {
+            "word": "상의를",
+            "start": 513.49,
+            "end": 513.55,
+            "score": 0
+          },
+          {
+            "word": "해봐야",
+            "start": 513.57,
+            "end": 513.631,
+            "score": 0
+          },
+          {
+            "word": "될",
+            "start": 513.651,
+            "end": 513.671,
+            "score": 0
+          },
+          {
+            "word": "것",
+            "start": 513.691,
+            "end": 513.711,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "같아요.",
+            "start": 513.731,
+            "end": 513.811,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          }
+        ],
+        "speaker": "SPEAKER_06"
+      },
+      {
+        "start": 513.831,
+        "end": 514.131,
+        "text": "용범님이나 기획자 분들이나.",
+        "words": [
+          {
+            "word": "용범님이나",
+            "start": 513.831,
+            "end": 513.931,
+            "score": 0.002,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "기획자",
+            "start": 513.951,
+            "end": 514.011,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "분들이나.",
+            "start": 514.031,
+            "end": 514.131,
+            "score": 0.001,
+            "speaker": "SPEAKER_06"
+          }
+        ],
+        "speaker": "SPEAKER_06"
+      },
+      {
+        "start": 514.151,
+        "end": 531.428,
+        "text": "왜냐면 벡터 DB를 사용하는 게 성능이 그렇게 좋지 않아서 그래프 DB를 함께 사용해서 하이브리드 형태로 가면 좋을 것 같은데 이걸 저 혼자 결정할 수 있는 부분이 아니라서 용범님이랑도 저번 주 금요일에 살짝 고려해보자고 얘기는 한 상황인데 아직 리서치는 하지 않은 상황이고요.",
+        "words": [
+          {
+            "word": "왜냐면",
+            "start": 514.151,
+            "end": 514.211,
+            "score": 0.002,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "벡터",
+            "start": 514.231,
+            "end": 514.271,
+            "score": 0.002,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "DB를",
+            "start": 514.291,
+            "end": 514.511,
+            "score": 0.556,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "사용하는",
+            "start": 514.612,
+            "end": 515.012,
+            "score": 0.519,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "게",
+            "start": 517.054,
+            "end": 517.074,
+            "score": 0.002,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "성능이",
+            "start": 517.094,
+            "end": 517.154,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "그렇게",
+            "start": 517.174,
+            "end": 517.234,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "좋지",
+            "start": 517.254,
+            "end": 517.294,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "않아서",
+            "start": 517.314,
+            "end": 518.876,
+            "score": 0.603,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "그래프",
+            "start": 518.896,
+            "end": 518.956,
+            "score": 0.33,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "DB를",
+            "start": 518.976,
+            "end": 529.126,
+            "score": 0.665,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "함께",
+            "start": 529.146,
+            "end": 529.186,
+            "score": 0.001,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "사용해서",
+            "start": 529.206,
+            "end": 529.286,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "하이브리드",
+            "start": 529.306,
+            "end": 529.406,
+            "score": 0.002,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "형태로",
+            "start": 529.426,
+            "end": 529.486,
+            "score": 0.006,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "가면",
+            "start": 529.506,
+            "end": 529.546,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "좋을",
+            "start": 529.566,
+            "end": 529.606,
+            "score": 0.024,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "것",
+            "start": 529.626,
+            "end": 529.646,
+            "score": 0.026,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "같은데",
+            "start": 529.666,
+            "end": 529.726,
+            "score": 0.001,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "이걸",
+            "start": 529.746,
+            "end": 529.786,
+            "score": 0.005,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "저",
+            "start": 529.806,
+            "end": 529.826,
+            "score": 0.028,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "혼자",
+            "start": 529.846,
+            "end": 529.887,
+            "score": 0.024,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "결정할",
+            "start": 529.907,
+            "end": 529.967,
+            "score": 0.02,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "수",
+            "start": 529.987,
+            "end": 530.007,
+            "score": 0.023,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "있는",
+            "start": 530.027,
+            "end": 530.067,
+            "score": 0.018,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "부분이",
+            "start": 530.087,
+            "end": 530.147,
+            "score": 0.008,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "아니라서",
+            "start": 530.167,
+            "end": 530.247,
+            "score": 0.003,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "용범님이랑도",
+            "start": 530.267,
+            "end": 530.387,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "저번",
+            "start": 530.407,
+            "end": 530.447,
+            "score": 0.014,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "주",
+            "start": 530.467,
+            "end": 530.487,
+            "score": 0.007,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "금요일에",
+            "start": 530.507,
+            "end": 530.587,
+            "score": 0.001,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "살짝",
+            "start": 530.607,
+            "end": 530.647,
+            "score": 0.014,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "고려해보자고",
+            "start": 530.667,
+            "end": 530.787,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "얘기는",
+            "start": 530.807,
+            "end": 530.867,
+            "score": 0.003,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "한",
+            "start": 530.887,
+            "end": 530.908,
+            "score": 0.007,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "상황인데",
+            "start": 530.928,
+            "end": 531.008,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "아직",
+            "start": 531.028,
+            "end": 531.068,
+            "score": 0.004,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "리서치는",
+            "start": 531.088,
+            "end": 531.168,
+            "score": 0.006,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "하지",
+            "start": 531.188,
+            "end": 531.228,
+            "score": 0.006,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "않은",
+            "start": 531.248,
+            "end": 531.288,
+            "score": 0.008,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "상황이고요.",
+            "start": 531.308,
+            "end": 531.428,
+            "score": 0.134,
+            "speaker": "SPEAKER_06"
+          }
+        ],
+        "speaker": "SPEAKER_06"
+      },
+      {
+        "start": 531.408,
+        "end": 539.164,
+        "text": " 리트리버 관련해서 에이전트 설계만 해놓고 도구는 지금 구현이 안 되어 있는 상황입니다.",
+        "words": [
+          {
+            "word": "리트리버",
+            "start": 531.408,
+            "end": 533.292,
+            "score": 0.74,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "관련해서",
+            "start": 533.753,
+            "end": 533.833,
+            "score": 0.246,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "에이전트",
+            "start": 536.358,
+            "end": 536.438,
+            "score": 0.024,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "설계만",
+            "start": 536.458,
+            "end": 536.518,
+            "score": 0.015,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "해놓고",
+            "start": 536.538,
+            "end": 536.598,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "도구는",
+            "start": 536.619,
+            "end": 536.679,
+            "score": 0.005,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "지금",
+            "start": 536.699,
+            "end": 536.739,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "구현이",
+            "start": 536.759,
+            "end": 536.819,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "안",
+            "start": 536.839,
+            "end": 536.859,
+            "score": 0.001,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "되어",
+            "start": 536.879,
+            "end": 536.919,
+            "score": 0.492,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "있는",
+            "start": 536.979,
+            "end": 539.023,
+            "score": 0.495,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "상황입니다.",
+            "start": 539.043,
+            "end": 539.164,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          }
+        ],
+        "speaker": "SPEAKER_06"
+      },
+      {
+        "start": 539.184,
+        "end": 546.138,
+        "text": "도구 구현에 있어서 어떤 식으로 스택을 선정을 할지 정하면 좋을 것 같아요.",
+        "words": [
+          {
+            "word": "도구",
+            "start": 539.184,
+            "end": 539.224,
+            "score": 0.012,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "구현에",
+            "start": 539.244,
+            "end": 539.344,
+            "score": 0.495,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "있어서",
+            "start": 539.384,
+            "end": 542.13,
+            "score": 0.931,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "어떤",
+            "start": 542.15,
+            "end": 542.19,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "식으로",
+            "start": 542.21,
+            "end": 542.27,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "스택을",
+            "start": 542.29,
+            "end": 542.49,
+            "score": 0.928,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "선정을",
+            "start": 543.252,
+            "end": 543.312,
+            "score": 0.174,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "할지",
+            "start": 545.817,
+            "end": 545.857,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "정하면",
+            "start": 545.877,
+            "end": 545.937,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "좋을",
+            "start": 545.957,
+            "end": 545.997,
+            "score": 0,
+            "speaker": "SPEAKER_06"
+          },
+          {
+            "word": "것",
+            "start": 546.018,
+            "end": 546.038,
+            "score": 0
+          },
+          {
+            "word": "같아요.",
+            "start": 546.058,
+            "end": 546.138,
+            "score": 0.006
+          }
+        ],
+        "speaker": "SPEAKER_06"
+      },
+      {
+        "start": 546.158,
+        "end": 546.278,
+        "text": "이상입니다.",
+        "words": [
+          {
+            "word": "이상입니다.",
+            "start": 546.158,
+            "end": 546.278,
+            "score": 0.003
+          }
+        ]
+      },
+      {
+        "start": 550.477,
+        "end": 565.21,
+        "text": " 사실 저는 오늘 별로 말씀드릴 건 없고 라이터 에이전트 계속 하고 있고 저번 주 휴가였잖아요.",
+        "words": [
+          {
+            "word": "사실",
+            "start": 550.477,
+            "end": 564.207,
+            "score": 0.498,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "저는",
+            "start": 564.227,
+            "end": 564.268,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "오늘",
+            "start": 564.288,
+            "end": 564.328,
+            "score": 0.001,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "별로",
+            "start": 564.348,
+            "end": 564.388,
+            "score": 0.001,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "말씀드릴",
+            "start": 564.408,
+            "end": 564.488,
+            "score": 0.001,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "건",
+            "start": 564.508,
+            "end": 564.528,
+            "score": 0.002,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "없고",
+            "start": 564.548,
+            "end": 564.588,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "라이터",
+            "start": 564.608,
+            "end": 564.668,
+            "score": 0.001,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "에이전트",
+            "start": 564.688,
+            "end": 564.769,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "계속",
+            "start": 564.789,
+            "end": 564.829,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "하고",
+            "start": 564.849,
+            "end": 564.889,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "있고",
+            "start": 564.909,
+            "end": 564.949,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "저번",
+            "start": 564.969,
+            "end": 565.009,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "주",
+            "start": 565.029,
+            "end": 565.049,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "휴가였잖아요.",
+            "start": 565.069,
+            "end": 565.21,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          }
+        ],
+        "speaker": "SPEAKER_04"
+      },
+      {
+        "start": 565.23,
+        "end": 565.31,
+        "text": "맞아요.",
+        "words": [
+          {
+            "word": "맞아요.",
+            "start": 565.23,
+            "end": 565.31,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          }
+        ],
+        "speaker": "SPEAKER_04"
+      },
+      {
+        "start": 565.33,
+        "end": 566.292,
+        "text": "저번 주에 요한님께서 L&M 폴더 넣어주셔서 그거랑 연결해서 지금 테스트하는 중입니다.",
+        "words": [
+          {
+            "word": "저번",
+            "start": 565.33,
+            "end": 565.37,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "주에",
+            "start": 565.39,
+            "end": 565.43,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "요한님께서",
+            "start": 565.45,
+            "end": 565.55,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "L&M",
+            "start": 565.57,
+            "end": 565.631,
+            "score": 0.001,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "폴더",
+            "start": 565.651,
+            "end": 565.691,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "넣어주셔서",
+            "start": 565.711,
+            "end": 565.811,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "그거랑",
+            "start": 565.831,
+            "end": 565.891,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "연결해서",
+            "start": 565.911,
+            "end": 565.991,
+            "score": 0,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "지금",
+            "start": 566.011,
+            "end": 566.052,
+            "score": 0.003,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "테스트하는",
+            "start": 566.072,
+            "end": 566.172,
+            "score": 0.003,
+            "speaker": "SPEAKER_04"
+          },
+          {
+            "word": "중입니다.",
+            "start": 566.192,
+            "end": 566.292,
+            "score": 0.012,
+            "speaker": "SPEAKER_04"
+          }
+        ],
+        "speaker": "SPEAKER_04"
+      },
+      {
+        "start": 572.33,
+        "end": 598.489,
+        "text": " 말씀드리고 싶은 거 있는데 이승원 부장님한테 지금 이제 보낼 자료를 정리를 하고 있는데 저희가 국방부에서 하는 온나라 시스템이 제일 중요하잖아요.",
+        "words": [
+          {
+            "word": "말씀드리고",
+            "start": 572.33,
+            "end": 573.051,
+            "score": 0.172,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "싶은",
+            "start": 573.071,
+            "end": 573.111,
+            "score": 0.295,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "거",
+            "start": 597.047,
+            "end": 597.067,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "있는데",
+            "start": 597.087,
+            "end": 597.147,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "이승원",
+            "start": 597.167,
+            "end": 597.227,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "부장님한테",
+            "start": 597.247,
+            "end": 597.348,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "지금",
+            "start": 597.368,
+            "end": 597.408,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "이제",
+            "start": 597.428,
+            "end": 597.468,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "보낼",
+            "start": 597.488,
+            "end": 597.528,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "자료를",
+            "start": 597.548,
+            "end": 597.608,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "정리를",
+            "start": 597.628,
+            "end": 597.688,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "하고",
+            "start": 597.708,
+            "end": 597.748,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "있는데",
+            "start": 597.768,
+            "end": 597.828,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "저희가",
+            "start": 597.848,
+            "end": 597.908,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "국방부에서",
+            "start": 597.928,
+            "end": 598.029,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "하는",
+            "start": 598.049,
+            "end": 598.089,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "온나라",
+            "start": 598.109,
+            "end": 598.169,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "시스템이",
+            "start": 598.189,
+            "end": 598.269,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "제일",
+            "start": 598.289,
+            "end": 598.329,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "중요하잖아요.",
+            "start": 598.349,
+            "end": 598.489,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          }
+        ],
+        "speaker": "SPEAKER_05"
+      },
+      {
+        "start": 598.509,
+        "end": 600.953,
+        "text": "그래서 그냥 빈 양식만 보내는 것보다는 이거를 일단 1차로 정리를 해서 어떤 내용인지 하나는 같이 보내는 게 좀 좋을 것 같아서 그래가지고 생각을 해본 거는 제가 그 온나라 어쨌든 TOC랑 저희랑 관련이 있는 거잖아요.",
+        "words": [
+          {
+            "word": "그래서",
+            "start": 598.509,
+            "end": 598.569,
+            "score": 0.001,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "그냥",
+            "start": 598.589,
+            "end": 598.63,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "빈",
+            "start": 598.65,
+            "end": 598.67,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "양식만",
+            "start": 598.69,
+            "end": 598.75,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "보내는",
+            "start": 598.77,
+            "end": 598.83,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "것보다는",
+            "start": 598.85,
+            "end": 598.93,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "이거를",
+            "start": 598.95,
+            "end": 599.01,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "일단",
+            "start": 599.03,
+            "end": 599.07,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "1차로",
+            "start": 599.09,
+            "end": 599.15,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "정리를",
+            "start": 599.17,
+            "end": 599.23,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "해서",
+            "start": 599.25,
+            "end": 599.291,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "어떤",
+            "start": 599.311,
+            "end": 599.351,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "내용인지",
+            "start": 599.371,
+            "end": 599.451,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "하나는",
+            "start": 599.471,
+            "end": 599.531,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "같이",
+            "start": 599.551,
+            "end": 599.591,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "보내는",
+            "start": 599.611,
+            "end": 599.671,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "게",
+            "start": 599.691,
+            "end": 599.711,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "좀",
+            "start": 599.731,
+            "end": 599.751,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "좋을",
+            "start": 599.771,
+            "end": 599.811,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "것",
+            "start": 599.831,
+            "end": 599.851,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "같아서",
+            "start": 599.871,
+            "end": 599.931,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "그래가지고",
+            "start": 599.952,
+            "end": 600.052,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "생각을",
+            "start": 600.072,
+            "end": 600.132,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "해본",
+            "start": 600.152,
+            "end": 600.192,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "거는",
+            "start": 600.212,
+            "end": 600.252,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "제가",
+            "start": 600.272,
+            "end": 600.312,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "그",
+            "start": 600.332,
+            "end": 600.352,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "온나라",
+            "start": 600.372,
+            "end": 600.432,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "어쨌든",
+            "start": 600.452,
+            "end": 600.512,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "TOC랑",
+            "start": 600.532,
+            "end": 600.613,
+            "score": 0.002,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "저희랑",
+            "start": 600.633,
+            "end": 600.693,
+            "score": 0.039,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "관련이",
+            "start": 600.713,
+            "end": 600.773,
+            "score": 0.105,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "있는",
+            "start": 600.793,
+            "end": 600.833,
+            "score": 0.114,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "거잖아요.",
+            "start": 600.853,
+            "end": 600.953,
+            "score": 0.129,
+            "speaker": "SPEAKER_05"
+          }
+        ],
+        "speaker": "SPEAKER_05"
+      },
+      {
+        "start": 600.933,
+        "end": 628.189,
+        "text": " 그래서 제가 뭐 일단 거기 필요한 내용을 작성을 하고 POC 하시는 분들한테 검수를 맡는다던지 아니면은 같이 POC 하시는 분들이랑 한 번이라도 회의를 해서 보고 그 내용을 채워가지고 보내면 좋을 것 같거든요 네네네 그래서 보낼 때 저희가 지금 제일 중점적으로 생각하는 게 이거라서 요건 정리를 했고 나머지도 요 툴이 괜찮으시면 요거에 맞춰서 보내드리겠다 약간 이런 식으로 말을 하면 좋을 것 같아서 네네 네 그렇게 하시죠",
+        "words": [
+          {
+            "word": "그래서",
+            "start": 600.933,
+            "end": 623.523,
+            "score": 0.332,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "제가",
+            "start": 623.543,
+            "end": 623.583,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "뭐",
+            "start": 623.603,
+            "end": 623.623,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "일단",
+            "start": 623.643,
+            "end": 623.683,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "거기",
+            "start": 623.703,
+            "end": 623.743,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "필요한",
+            "start": 623.763,
+            "end": 623.823,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "내용을",
+            "start": 623.843,
+            "end": 623.903,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "작성을",
+            "start": 623.923,
+            "end": 623.983,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "하고",
+            "start": 624.003,
+            "end": 624.044,
+            "score": 0.002,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "POC",
+            "start": 624.064,
+            "end": 624.124,
+            "score": 0.001,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "하시는",
+            "start": 624.144,
+            "end": 624.204,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "분들한테",
+            "start": 624.224,
+            "end": 624.304,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "검수를",
+            "start": 624.324,
+            "end": 624.384,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "맡는다던지",
+            "start": 624.404,
+            "end": 624.504,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "아니면은",
+            "start": 624.524,
+            "end": 624.604,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "같이",
+            "start": 624.624,
+            "end": 624.664,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "POC",
+            "start": 624.684,
+            "end": 624.744,
+            "score": 0.001,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "하시는",
+            "start": 624.764,
+            "end": 624.825,
+            "score": 0.001,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "분들이랑",
+            "start": 624.845,
+            "end": 624.925,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "한",
+            "start": 624.945,
+            "end": 624.965,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "번이라도",
+            "start": 624.985,
+            "end": 625.065,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "회의를",
+            "start": 625.085,
+            "end": 625.145,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "해서",
+            "start": 625.165,
+            "end": 625.205,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "보고",
+            "start": 625.225,
+            "end": 625.265,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "그",
+            "start": 625.285,
+            "end": 625.305,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "내용을",
+            "start": 625.325,
+            "end": 625.385,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "채워가지고",
+            "start": 625.405,
+            "end": 625.505,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "보내면",
+            "start": 625.526,
+            "end": 625.586,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "좋을",
+            "start": 625.606,
+            "end": 625.646,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "것",
+            "start": 625.666,
+            "end": 625.686,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "같거든요",
+            "start": 625.706,
+            "end": 625.786,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "네네네",
+            "start": 625.806,
+            "end": 625.866,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "그래서",
+            "start": 625.886,
+            "end": 625.946,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "보낼",
+            "start": 625.966,
+            "end": 626.006,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "때",
+            "start": 626.026,
+            "end": 626.046,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "저희가",
+            "start": 626.066,
+            "end": 626.126,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "지금",
+            "start": 626.146,
+            "end": 626.186,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "제일",
+            "start": 626.206,
+            "end": 626.246,
+            "score": 0,
+            "speaker": "SPEAKER_05"
+          },
+          {
+            "word": "중점적으로",
+            "start": 626.266,
+            "end": 626.367,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "생각하는",
+            "start": 626.387,
+            "end": 626.467,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "게",
+            "start": 626.487,
+            "end": 626.507,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이거라서",
+            "start": 626.527,
+            "end": 626.607,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "요건",
+            "start": 626.627,
+            "end": 626.667,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "정리를",
+            "start": 626.687,
+            "end": 626.747,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "했고",
+            "start": 626.767,
+            "end": 626.807,
+            "score": 0.002,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "나머지도",
+            "start": 626.827,
+            "end": 626.907,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "요",
+            "start": 626.927,
+            "end": 626.947,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "툴이",
+            "start": 626.967,
+            "end": 627.007,
+            "score": 0.001,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "괜찮으시면",
+            "start": 627.027,
+            "end": 627.128,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "요거에",
+            "start": 627.148,
+            "end": 627.208,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "맞춰서",
+            "start": 627.228,
+            "end": 627.288,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "보내드리겠다",
+            "start": 627.308,
+            "end": 627.428,
+            "score": 0,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "약간",
+            "start": 627.448,
+            "end": 627.488,
+            "score": 0.031,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "이런",
+            "start": 627.508,
+            "end": 627.548,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "식으로",
+            "start": 627.568,
+            "end": 627.628,
+            "score": 0.007,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "말을",
+            "start": 627.648,
+            "end": 627.688,
+            "score": 0.06,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하면",
+            "start": 627.708,
+            "end": 627.748,
+            "score": 0.006,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "좋을",
+            "start": 627.768,
+            "end": 627.809,
+            "score": 0.045,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "것",
+            "start": 627.829,
+            "end": 627.849,
+            "score": 0.024,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "같아서",
+            "start": 627.869,
+            "end": 627.929,
+            "score": 0.052,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "네네",
+            "start": 627.949,
+            "end": 627.989,
+            "score": 0.026,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "네",
+            "start": 628.009,
+            "end": 628.029,
+            "score": 0.034,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "그렇게",
+            "start": 628.049,
+            "end": 628.109,
+            "score": 0.13,
+            "speaker": "SPEAKER_00"
+          },
+          {
+            "word": "하시죠",
+            "start": 628.129,
+            "end": 628.189,
+            "score": 0.013,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_05"
+      },
+      {
+        "start": 630.397,
+        "end": 634.99,
+        "text": " 수고하셨습니다.",
+        "words": [
+          {
+            "word": "수고하셨습니다.",
+            "start": 630.397,
+            "end": 634.99,
+            "score": 0.148,
+            "speaker": "SPEAKER_00"
+          }
+        ],
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "language": null,
+    "processing_time": 14.99,
+    "meta": {
+      "diarization_status": "success"
+    }
+  }
+}

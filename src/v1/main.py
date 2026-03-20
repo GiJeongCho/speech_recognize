@@ -139,6 +139,7 @@ class SpeakerEngine:
             # 확정된 문장 단위 청크들에 대해 화자 식별 수행
             for i, chunk in enumerate(final_chunks):
                 start, end = chunk["start"], chunk["end"]
+                original_speaker = chunk.get("speaker", "unknown")
                 
                 # 청크 잘라내기
                 s_idx = max(0, int(round(start * sr)))
@@ -148,6 +149,15 @@ class SpeakerEngine:
                     continue
                     
                 seg_wav = wav[:, s_idx:e_idx]
+
+                # 0.5초 미만의 짧은 오디오는 복제하여 길이를 늘림 (화자 식별 정확도 향상)
+                # 0.2초 이하 구간은 이미 json_parser에서 병합되었으므로, 여기서는 0.2~0.5초 구간이 주 대상
+                seg_duration = seg_wav.size(1) / sr
+                if seg_duration > 0 and seg_duration < 0.5:
+                    # 0.5초 이상이 될 때까지 반복 (최소 2배)
+                    repeat_count = int(0.5 / seg_duration) + 1
+                    seg_wav = seg_wav.repeat(1, repeat_count)
+
                 torchaudio.save(temp_seg_path, seg_wav, sr)
                 
                 best_spk = "unknown"
@@ -175,6 +185,7 @@ class SpeakerEngine:
                     "end": round(end, 3),
                     "text": chunk["text"],
                     "speaker": assigned,
+                    "original_speaker": original_speaker,  # 후처리를 위해 원본 화자 정보 임시 저장
                     "score": round(float(best_score), 4) if best_score != -1.0 else 0.0
                 })
 
@@ -183,6 +194,56 @@ class SpeakerEngine:
                 if progress_callback and total_chunks > 0:
                     current_percent = 10.0 + (float(i + 1) / total_chunks * 89.0)
                     progress_callback(current_percent)
+
+            # --- 후처리: 화자 일관성 보정 (80% 룰) ---
+            from collections import defaultdict
+            
+            # 1. 통계 집계: 원본 화자별로 식별된 화자 카운트
+            speaker_stats = defaultdict(lambda: {"total": 0, "counts": defaultdict(int)})
+            
+            for r in results:
+                orig = r.get("original_speaker")
+                identified = r["speaker"]
+                if not orig: continue
+                
+                speaker_stats[orig]["total"] += 1
+                if identified != "unknown":
+                    speaker_stats[orig]["counts"][identified] += 1
+            
+            # 2. 매핑 규칙 생성
+            mapping = {}
+            for orig, stats in speaker_stats.items():
+                total = stats["total"]
+                if total == 0:
+                    mapping[orig] = orig
+                    continue
+                
+                # 가장 많이 식별된 화자 찾기
+                best_identified = None
+                max_count = 0
+                for name, count in stats["counts"].items():
+                    if count > max_count:
+                        max_count = count
+                        best_identified = name
+                
+                # 해당 화자가 전체의 80% 이상을 차지하면, 나머지도 그 사람으로 간주
+                if best_identified and (max_count / total >= 0.99):
+                    mapping[orig] = best_identified
+                else:
+                    # 그렇지 않으면 원본 화자(SPEAKER_XX) 사용 (외부 화자 처리)
+                    mapping[orig] = orig
+            
+            # 3. 결과 업데이트 (unknown인 경우에만 매핑 적용)
+            for r in results:
+                if r["speaker"] == "unknown":
+                    orig = r.get("original_speaker")
+                    if orig:
+                        r["speaker"] = mapping.get(orig, orig)
+                
+                # 임시 필드 제거
+                if "original_speaker" in r:
+                    del r["original_speaker"]
+            # --------------------------------------
 
         finally:
             # 임시 파일 및 폴더 정리

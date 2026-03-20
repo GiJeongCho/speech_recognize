@@ -2,10 +2,27 @@
 *.th
 pretrain/
 model/
+src/resoursces/models/
+src/resoursces/model/
 output/
 testdata/
 speaker_chunks/
+nohup.out
 
+### Models ###
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.pb
+*.h5
+*.hdf5
+*.tflite
+*.safetensors
+*.mdl
+*.msc
+*.mv
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,linux,windows,audio,text
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,linux,windows,audio,text
 
