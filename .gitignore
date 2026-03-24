@@ -1,28 +1,26 @@
 .vscode/
 *.th
 pretrain/
-model/
-src/resoursces/models/
-src/resoursces/model/
 output/
 testdata/
 speaker_chunks/
 nohup.out
 
-### Models ###
-*.ckpt
-*.pt
-*.pth
-*.bin
-*.onnx
-*.pb
-*.h5
-*.hdf5
-*.tflite
-*.safetensors
-*.mdl
-*.msc
-*.mv
+### Models - 바이너리 모델 파일만 무시, 설정/메타 파일은 유지 ###
+src/resoursces/models/**/*.ckpt
+src/resoursces/models/**/*.pt
+src/resoursces/models/**/*.pth
+src/resoursces/models/**/*.bin
+src/resoursces/models/**/*.onnx
+src/resoursces/models/**/*.pb
+src/resoursces/models/**/*.h5
+src/resoursces/models/**/*.hdf5
+src/resoursces/models/**/*.tflite
+src/resoursces/models/**/*.safetensors
+src/resoursces/models/**/*.mdl
+src/resoursces/models/**/*.msc
+src/resoursces/models/**/*.mv
+src/resoursces/models/**/.lock/
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,linux,windows,audio,text
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,linux,windows,audio,text
 
@@ -36,10 +34,16 @@ nohup.out
 *.mp3
 *.mpa
 *.ra
-*.wav
 *.wma
 *.ogg
 *.flac
+
+# employee 음성 데이터는 추적
+!src/resoursces/employee/**/*.m4a
+!src/resoursces/employee/**/*.wav
+!src/resoursces/employee/**/*.mp3
+!src/resoursces/employee/**/*.ogg
+!src/resoursces/employee/**/*.flac
 
 ### Linux ###
 *~
