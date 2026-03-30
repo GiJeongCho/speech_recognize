@@ -34,4 +34,6 @@ async def health():
     return {"status": "healthy"}
 
 if __name__ == "__main__":
-    uvicorn.run("src.api:app", host="0.0.0.0", port=8016, reload=True)
+    import os
+    port = int(os.getenv("APP_PORT", "6003"))
+    uvicorn.run("src.api:app", host="0.0.0.0", port=port, reload=True)
