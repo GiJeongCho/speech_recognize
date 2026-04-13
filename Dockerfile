@@ -34,5 +34,6 @@ COPY README.md ./
 ENV PYTHONPATH=/app
 ENV SPEAKER_MODEL_PATH=/app/src/resoursces/models/iic/speech_eres2net_base_sv_zh-cn_3dspeaker_16k
 
-EXPOSE 8016
-CMD ["python", "-m", "uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8016"]
+ENV APP_PORT=5003
+EXPOSE ${APP_PORT}
+CMD ["sh", "-c", "python -m uvicorn src.api:app --host 0.0.0.0 --port ${APP_PORT}"]
